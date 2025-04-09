@@ -7,6 +7,8 @@ import Certificate2 from '@/public/jsmastery.png';
 import Certificate3 from '@/public/jonas.png';
 import Certificate4 from '@/public/angela-yu.png';
 import Certificate5 from '@/public/react-front-to-back.png';
+import BrowserMockup from '@/components/BrowserMockup';
+import { FaLock } from 'react-icons/fa';
 
 const content = [
   {
@@ -91,13 +93,19 @@ const content = [
   },
 ];
 
+const urlText = (
+  <>
+    <FaLock className='inline-block text-xs mr-2' /> www.sawsimonlinn.com
+  </>
+);
 const Courses = () => {
   return (
-    <div>
-      {' '}
-      <div className='w-full'>
-        <StickyScroll content={content} />
-      </div>
+    <div className=' md:max-w-full flex mx-auto justify-center px-4 py-10'>
+      <BrowserMockup url={urlText}>
+        <div className=' mx-auto'>
+          <StickyScroll content={content} />
+        </div>
+      </BrowserMockup>
     </div>
   );
 };
