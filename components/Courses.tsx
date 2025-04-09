@@ -93,12 +93,12 @@ const content = [
   },
 ];
 
-const urlText = (
-  <>
-    <FaLock className='inline-block text-xs mr-2' /> www.sawsimonlinn.com
-  </>
-);
 const Courses = () => {
+  const urlText = (
+    <>
+      <FaLock className='inline-block mr-2' /> www.sawsimonlinn.com
+    </>
+  );
   return (
     <div className=' md:max-w-full flex mx-auto justify-center px-4 py-10'>
       <BrowserMockup url={urlText}>
