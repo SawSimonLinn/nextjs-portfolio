@@ -4,7 +4,7 @@ import { HoverBorderGradientDemo } from '@/components/HoverBorderGradientDemo';
 
 export function Hero() {
   return (
-    <BackgroundLines className='flex items-center justify-center w-full flex-col px-4'>
+    <BackgroundLines className='flex items-center justify-center w-full flex-col px-4 h-svh'>
       <p className='max-w-xl mx-auto text-sm md:text-sm text-neutral-700 uppercase dark:text-neutral-300 text-center font-bold'>
         Created with Next.js & Aceternity UI
       </p>

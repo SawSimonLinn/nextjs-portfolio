@@ -95,7 +95,7 @@ const content = [
 
 const Courses = () => {
   return (
-    <div className='md:max-w-full flex mx-auto justify-center px-4 py-10'>
+    <div className='md:max-w-full flex mx-auto justify-center px-4 py-10 '>
       <BrowserMockup>
         <div className='mx-auto'>
           <StickyScroll content={content} />
