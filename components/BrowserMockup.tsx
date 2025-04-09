@@ -1,14 +1,14 @@
 import { ReactNode } from 'react';
 
 interface BrowserMockupProps {
-  url?: string;
+  urlText?: ReactNode; // Accepts JSX elements
   children: ReactNode;
 }
 
-export default function BrowserMockup({
-  url = 'www.sawsimonlinn.com',
+const BrowserMockup = ({
+  urlText = '🔒 www.sawsimonlinn.dev',
   children,
-}: BrowserMockupProps) {
+}: BrowserMockupProps) => {
   return (
     <div className='rounded-xl border border-neutral-600 bg-neutral-900 shadow-md overflow-hidden'>
       <div className='flex items-center justify-between px-4 py-2 bg-neutral-800 border-b border-neutral-900'>
@@ -19,7 +19,7 @@ export default function BrowserMockup({
         </div>
         <div className='center flex items-center justify-center'>
           <span className='text-xs text-white truncate bg-neutral-700 px-30 py-1 rounded-md'>
-            {url}
+            {urlText}
           </span>
         </div>
         <div className='nth'></div>
@@ -27,4 +27,6 @@ export default function BrowserMockup({
       <div className='p-4 bg-neutral-900'>{children}</div>
     </div>
   );
-}
+};
+
+export default BrowserMockup;

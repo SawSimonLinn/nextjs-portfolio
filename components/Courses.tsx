@@ -94,15 +94,10 @@ const content = [
 ];
 
 const Courses = () => {
-  const urlText = (
-    <>
-      <FaLock className='inline-block mr-2' /> www.sawsimonlinn.com
-    </>
-  );
   return (
-    <div className=' md:max-w-full flex mx-auto justify-center px-4 py-10'>
-      <BrowserMockup url={urlText}>
-        <div className=' mx-auto'>
+    <div className='md:max-w-full flex mx-auto justify-center px-4 py-10'>
+      <BrowserMockup>
+        <div className='mx-auto'>
           <StickyScroll content={content} />
         </div>
       </BrowserMockup>
