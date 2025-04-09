@@ -5,7 +5,7 @@ import { FaLocationArrow } from 'react-icons/fa6';
 
 export function HoverBorderGradientDemo() {
   return (
-    <a href='#projects' className='m-10 flex justify-center text-center'>
+    <a href='#projects' className='m-5 md:m-10 flex justify-center text-center'>
       <HoverBorderGradient
         containerClassName='rounded-xl  border-transparent'
         as='button'
