@@ -35,7 +35,7 @@ function Navbar({ className }: { className?: string }) {
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item='Projects'>
-          <div className='  text-sm grid grid-cols-2 gap-10 p-4'>
+          <div className='  text-sm grid  md:grid-cols-2 grid-cols-1 gap-10 p-4'>
             <ProductItem
               title='Algochurn'
               href='https://algochurn.com'

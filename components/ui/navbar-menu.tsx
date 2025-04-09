@@ -70,7 +70,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className='relative rounded-xl border border-transparent dark:bg-neutral-900 dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-10 py-5 w-max'
+      className='relative rounded-xl border border-transparent dark:bg-neutral-900 dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 md:px-10 md:py-5 px-5 py-3 w-max'
     >
       {children}
     </nav>
@@ -89,7 +89,7 @@ export const ProductItem = ({
   src: string;
 }) => {
   return (
-    <Link href={href} className='flex space-x-2'>
+    <Link href={href} className='flex md:flex-row flex-col space-x-2'>
       <Image
         src={src}
         width={140}
@@ -98,7 +98,7 @@ export const ProductItem = ({
         className='shrink-0 rounded-md shadow-2xl'
       />
       <div>
-        <h4 className='text-xl font-bold mb-1 text-black dark:text-white'>
+        <h4 className='text-lg font-bold mb-1 text-black dark:text-white'>
           {title}
         </h4>
         <p className='text-neutral-700 text-sm max-w-[10rem] dark:text-neutral-300'>
