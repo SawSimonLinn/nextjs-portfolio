@@ -8,6 +8,17 @@ import { GlowingEffect } from '@/components/ui/glowing-effect';
 export function GlowingEffectDemo() {
   return (
     <>
+      <div className='max-w-7xl mx-auto flex flex-col items-center py-20 px-4 md:px-8 lg:px-10'>
+        <h2 className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl'>
+          What I Bring to the Table
+        </h2>
+        <p className='text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-2xl text-center'>
+          A quick glimpse into my development journey—combining design,
+          frontend, backend, and real-world teamwork. Every skill, every course,
+          and every project adds to how I build beautiful, functional
+          experiences.
+        </p>
+      </div>
       <ul className='grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2 px-8 md:px-20'>
         <GridItem
           area='md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]'

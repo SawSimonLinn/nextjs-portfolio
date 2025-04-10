@@ -33,7 +33,7 @@ export function Hero() {
           A TripleTen graduate from California, specializing in building modern,
           user-friendly websites and creating responsive web designs.
         </p>
-        <HoverBorderGradientDemo />
+        <HoverBorderGradientDemo text='Explore more' />
       </BackgroundLines>
     </div>
   );

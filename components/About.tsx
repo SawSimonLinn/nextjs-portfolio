@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import {
   FaReact,
@@ -21,10 +22,35 @@ import {
   SiAppwrite,
   SiSentry,
 } from 'react-icons/si';
+import { TypewriterEffectSmooth } from '@/components/ui/typewriter-effect';
 
 const About = () => {
+  const words = [
+    {
+      text: 'Software',
+    },
+    {
+      text: 'Developer',
+    },
+    {
+      text: 'with',
+    },
+    {
+      text: 'powerful',
+      className: 'text-blue-500 dark:text-blue-500',
+    },
+    {
+      text: 'intent.',
+    },
+  ];
   return (
     <section id='about' className='w-full px-10 py-20 bg-black text-white'>
+      <div className='flex flex-col items-center justify-center h-[10rem]  '>
+        <p className='text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  '>
+          Turning ideas into clean digital realities
+        </p>
+        <TypewriterEffectSmooth words={words} />
+      </div>
       <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start'>
         {/* About Text */}
         <div>

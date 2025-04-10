@@ -27,6 +27,10 @@ export function NavbarDemo() {
       link: '#certifications',
     },
     {
+      name: 'Testimonials',
+      link: '#testimonials',
+    },
+    {
       name: 'Contact',
       link: '#contact',
     },
