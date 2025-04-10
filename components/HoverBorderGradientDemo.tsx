@@ -9,7 +9,7 @@ export function HoverBorderGradientDemo() {
       <HoverBorderGradient
         containerClassName='rounded-xl  border-transparent'
         as='button'
-        className='cursor-pointer dark:bg-black md:py-3 md:px-7 bg-white text-black dark:text-white flex items-center space-x-2'
+        className='cursor-pointer dark:bg-black md:py-4 md:px-9 bg-white text-black dark:text-white flex items-center space-x-2'
       >
         <span>Explore more</span>
         <FaLocationArrow />

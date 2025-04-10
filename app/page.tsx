@@ -1,6 +1,6 @@
 import { AnimatedTestimonialsDemo } from '@/components/AnimatedTestimonialsDemo';
-import { AppleCardsCarouselDemo } from '@/components/AppleCardsCarouselDemo';
 import Courses from '@/components/Courses';
+import { GlowingEffectDemo } from '@/components/GlowingEffectDemo';
 import { Hero } from '@/components/Hero';
 import { NavbarDemo } from '@/components/NavbarDemo';
 import { TimelineDemo } from '@/components/TimelineDemo';
@@ -11,8 +11,8 @@ export default function Home() {
       <NavbarDemo />
       <Hero />
       <Courses />
-      <AppleCardsCarouselDemo />
       <TimelineDemo />
+      <GlowingEffectDemo />
       <AnimatedTestimonialsDemo />
     </>
   );
