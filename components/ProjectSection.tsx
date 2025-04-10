@@ -87,14 +87,13 @@ const projects: Project[] = [
       <FaCss3 />,
     ],
     title: 'WTWR (What to Wear)',
-    type: 'Fullstack ',
+    type: 'Fullstack',
     description:
       'A React.js frontend project with a dynamic UI, component-based architecture, state management, and API integration.',
     image: project2,
     demo: 'https://wtwrapp.jumpingcrab.com/',
     github: 'https://github.com/SawSimonLinn/se_project_react',
   },
-  // Add more projects here...
   {
     id: 3,
     icons: [
