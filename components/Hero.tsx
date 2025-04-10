@@ -6,7 +6,7 @@ import { HoverBorderGradientDemo } from '@/components/HoverBorderGradientDemo';
 
 export function Hero() {
   return (
-    <div className='relative flex h-[50rem] md:h-screen w-full items-center justify-center bg-white dark:bg-black'>
+    <div className='relative flex h-[40rem] md:h-screen w-full items-center justify-center bg-white dark:bg-black'>
       <div
         className={cn(
           'absolute inset-0',
@@ -17,7 +17,7 @@ export function Hero() {
       />
       {/* Radial gradient for the container to give a faded look */}
       <div className='pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black'></div>
-      <BackgroundLines className='-top-15 relative flex items-center justify-center w-full flex-col px-4 h-[60rem] md:h-svh'>
+      <BackgroundLines className='md:-top-15 -top-5 relative flex items-center justify-center w-full flex-col px-4 h-[60rem] md:h-svh'>
         <p className='max-w-xl mx-auto text-xs md:text-sm text-neutral-700 uppercase dark:text-neutral-300 text-center font-bold'>
           Created with Next.js & Aceternity UI
         </p>
