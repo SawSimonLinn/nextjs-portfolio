@@ -95,7 +95,7 @@ const content = [
 const Courses = () => {
   return (
     <div className='md:max-w-full flex mx-auto justify-center flex-col px-6 py-10 '>
-      <div className='max-w-7xl mx-auto flex flex-col items-center pb-20 px-4 md:px-8 lg:px-10'>
+      <div className='max-w-7xl mx-auto flex flex-col items-center py-20 px-4 md:px-8 lg:px-10'>
         <h2 className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl'>
           Courses & Certificates
         </h2>

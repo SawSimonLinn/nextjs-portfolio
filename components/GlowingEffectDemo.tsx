@@ -1,6 +1,5 @@
 'use client';
 
-import { Box, Lock, Search, Settings, Sparkles } from 'lucide-react';
 import { FaReact, FaNodeJs, FaCertificate } from 'react-icons/fa';
 import { SiMaterialdesignicons } from 'react-icons/si';
 import { FaGit } from 'react-icons/fa6';
@@ -8,46 +7,52 @@ import { GlowingEffect } from '@/components/ui/glowing-effect';
 
 export function GlowingEffectDemo() {
   return (
-    <ul className='grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2 px-8 md:px-20'>
-      <GridItem
-        area='md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]'
-        icon={<FaReact className='h-6 w-6 text-black dark:text-neutral-400' />}
-        title='Frontend Focus'
-        description='Building sleek interfaces with React, Tailwind & animations.'
-      />
+    <>
+      <ul className='grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2 px-8 md:px-20'>
+        <GridItem
+          area='md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]'
+          icon={
+            <FaReact className='h-6 w-6 text-black dark:text-neutral-400' />
+          }
+          title='Frontend Focus'
+          description='Building sleek interfaces with React, Tailwind & animations.'
+        />
 
-      <GridItem
-        area='md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]'
-        icon={<FaNodeJs className='h-6 w-6 text-black dark:text-neutral-400' />}
-        title='Backend Magic'
-        description='Creating APIs and servers with Node.js & MongoDB.'
-      />
+        <GridItem
+          area='md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]'
+          icon={
+            <FaNodeJs className='h-6 w-6 text-black dark:text-neutral-400' />
+          }
+          title='Backend Magic'
+          description='Creating APIs and servers with Node.js & MongoDB.'
+        />
 
-      <GridItem
-        area='md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]'
-        icon={
-          <SiMaterialdesignicons className='h-6 w-6 text-black dark:text-neutral-400' />
-        }
-        title='Design to Code'
-        description='Turning visuals into responsive UI like a cheeky pro.'
-      />
+        <GridItem
+          area='md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]'
+          icon={
+            <SiMaterialdesignicons className='h-6 w-6 text-black dark:text-neutral-400' />
+          }
+          title='Design to Code'
+          description='Turning visuals into responsive UI like a cheeky pro.'
+        />
 
-      <GridItem
-        area='md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]'
-        icon={<FaGit className='h-6 w-6 text-black dark:text-neutral-400' />}
-        title='Code Collaboration'
-        description='Working with teams in code jams and Git workflows.'
-      />
+        <GridItem
+          area='md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]'
+          icon={<FaGit className='h-6 w-6 text-black dark:text-neutral-400' />}
+          title='Code Collaboration'
+          description='Working with teams in code jams and Git workflows.'
+        />
 
-      <GridItem
-        area='md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]'
-        icon={
-          <FaCertificate className='h-6 w-6 text-black dark:text-neutral-400' />
-        }
-        title='Course Collection'
-        description='Certificates & skills from TripleTen, Udemy, & more.'
-      />
-    </ul>
+        <GridItem
+          area='md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]'
+          icon={
+            <FaCertificate className='h-6 w-6 text-black dark:text-neutral-400' />
+          }
+          title='Course Collection'
+          description='Certificates & skills from TripleTen, Udemy, & more.'
+        />
+      </ul>
+    </>
   );
 }
 
