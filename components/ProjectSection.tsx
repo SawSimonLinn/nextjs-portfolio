@@ -281,16 +281,16 @@ export default function ProjectSection() {
                 <a
                   href={project.github}
                   target='_blank'
-                  className='bg-white text-black px-7 py-2 rounded text-sm flex items-center gap-2 font-medium hover:bg-white/80 transition'
+                  className='bg-white text-black px-7 py-2 rounded text-sm flex items-center  justify-center gap-2 font-medium hover:bg-white/80 transition'
                 >
                   <FaGithub /> GitHub
                 </a>
                 <a
                   href={project.demo}
                   target='_blank'
-                  className='bg-transparent border border-white flex items-center gap-2 px-7 py-2 rounded text-sm hover:bg-white hover:text-black transition'
+                  className='bg-transparent border border-white flex items-center justify-center gap-2 px-7 py-2 rounded text-sm hover:bg-white hover:text-black transition'
                 >
-                  <FaExternalLinkAlt />
+                  <FaExternalLinkAlt className='text-xs' />
                   Demo
                 </a>
               </div>
