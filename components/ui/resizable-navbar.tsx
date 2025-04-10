@@ -245,12 +245,12 @@ export const NavbarLogo = () => {
         className='rounded-md'
       />
       <div className='logo-title flex flex-col'>
-        <span className='font-bold tracking-wider text-black dark:text-white'>
+        <span className='font-bold tracking-wide text-black dark:text-white'>
           Saw Simon Linn
         </span>
-        <div className='flex items-center space-x-1'>
+        <div className='flex items-center space-x-3'>
           <div className='green-dot bg-green-400 rounded w-[6px] h-[6px]'></div>
-          <span className='font-light text-black dark:text-white'>
+          <span className='font-light text-black text-xs tracking-wide dark:text-white'>
             Available for hire
           </span>
         </div>

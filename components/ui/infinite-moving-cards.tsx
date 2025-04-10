@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 
 export const InfiniteMovingCards = ({
   items,
-  direction = 'left',
+  direction = 'right',
   speed = 'fast',
   pauseOnHover = true,
   className,
@@ -15,7 +15,7 @@ export const InfiniteMovingCards = ({
     name: string;
     title: string;
   }[];
-  direction?: 'left' | 'right';
+  direction?: 'right' | 'left';
   speed?: 'fast' | 'normal' | 'slow';
   pauseOnHover?: boolean;
   className?: string;
@@ -45,7 +45,7 @@ export const InfiniteMovingCards = ({
   }
   const getDirection = () => {
     if (containerRef.current) {
-      if (direction === 'left') {
+      if (direction === 'right') {
         containerRef.current.style.setProperty(
           '--animation-direction',
           'forwards'

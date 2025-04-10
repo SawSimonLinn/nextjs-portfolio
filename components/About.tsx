@@ -147,7 +147,6 @@ const About = () => {
                 <p className='text-sm text-gray-200 font-semibold'>
                   Tools
                   <strong className='flex justify-between mt-2'>
-                    <FaGitSquare className='text-red-500' />
                     <FaGithub className='text-gray-300' />
                     <CgFigma className='text-pink-400' />
                     <SiPostman className='text-orange-500' />
@@ -155,7 +154,6 @@ const About = () => {
                     <SiNetlify className='text-green-400' />
                     <SiSanity className='text-purple-500' />
                     <SiAppwrite className='text-blue-500' />
-                    <SiSentry className='text-yellow-400' />
                   </strong>
                 </p>
                 <ul className='text-sm text-gray-400 mt-2 space-y-1 list-disc list-inside'>
