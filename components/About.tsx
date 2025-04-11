@@ -146,7 +146,7 @@ const About = () => {
                     Frontend
                     <strong className='flex justify-between mt-2'>
                       <FaReact className='text-cyan-300' />
-                      <RiNextjsFill className='text-gray-300' />
+                      <RiNextjsFill className='text-black dark:text-gray-300' />
                       <RiJavascriptFill className='text-yellow-300' />
                       <BiLogoTypescript className='text-blue-400' />
                       <FaHtml5 className='text-orange-500' />
@@ -182,7 +182,7 @@ const About = () => {
                   <p className='text-sm text-gray-800 dark:text-gray-200 font-semibold'>
                     Tools
                     <strong className='flex justify-between mt-2'>
-                      <FaGithub className='text-gray-300' />
+                      <FaGithub className='text-black dark:text-gray-300' />
                       <CgFigma className='text-pink-400' />
                       <SiPostman className='text-orange-500' />
                       <SiNetlify className='text-green-400' />
