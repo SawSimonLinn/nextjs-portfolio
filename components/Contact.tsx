@@ -25,7 +25,7 @@ const Contact = () => {
     if (response.ok) {
       window.location.href = '/thank-you';
     } else {
-      alert('Something went wrong 😢');
+      alert('Something went wrong. Please try again later.');
     }
   };
 

@@ -3,6 +3,7 @@ import React from 'react';
 import { BackgroundLines } from '@/components/ui/background-lines';
 import { ContainerTextFlip } from '@/components/ui/container-text-flip';
 import { HoverBorderGradientDemo } from '@/components/HoverBorderGradientDemo';
+import Link from 'next/link';
 
 export function Hero() {
   return (
@@ -33,7 +34,9 @@ export function Hero() {
           A TripleTen graduate from California, specializing in building modern,
           user-friendly websites and creating responsive web designs.
         </p>
-        <HoverBorderGradientDemo text='Explore more' />
+        <Link href='#projects'>
+          <HoverBorderGradientDemo text='Explore more' />
+        </Link>
       </BackgroundLines>
     </div>
   );

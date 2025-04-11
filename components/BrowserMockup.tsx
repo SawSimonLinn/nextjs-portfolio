@@ -6,7 +6,7 @@ interface BrowserMockupProps {
 }
 
 const BrowserMockup = ({
-  urlText = '🔒 www.sawsimonlinn.dev',
+  urlText = '🔒 www.sawsimonlinn.com',
   children,
 }: BrowserMockupProps) => {
   return (

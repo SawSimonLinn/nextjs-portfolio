@@ -1,12 +1,6 @@
 'use client';
 import React from 'react';
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3,
-  FaGitSquare,
-  FaGithub,
-} from 'react-icons/fa';
+import { FaReact, FaHtml5, FaCss3, FaGithub } from 'react-icons/fa';
 import { CgFigma } from 'react-icons/cg';
 import {
   RiNextjsFill,
@@ -44,7 +38,7 @@ const About = () => {
     },
   ];
   return (
-    <section id='about' className='w-full px-10 py-20 bg-black text-white'>
+    <section id='about' className='w-full px-10 pt-20 bg-black text-white'>
       <div className='flex flex-col items-center justify-center h-[10rem]  '>
         <p className='text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  '>
           Turning ideas into clean digital realities
@@ -85,12 +79,15 @@ const About = () => {
           </p>
           <div className='mt-6'>
             <a
-              href='/resume.pdf'
+              href='https://github.com/SawSimonLinn'
               target='_blank'
               rel='noopener noreferrer'
               className='inline-block px-6 py-2 border border-white/20 rounded-md text-sm font-bold text-white bg-white/10 hover:bg-white/20 transition-all duration-200'
             >
-              View My Resume
+              <span className='flex items-center gap-2'>
+                <FaGithub className='text-gray-300' />
+                View My GitHub
+              </span>
             </a>
             <p className='text-sm text-gray-400 mt-2'>
               Or feel free to{' '}
@@ -150,10 +147,10 @@ const About = () => {
                     <FaGithub className='text-gray-300' />
                     <CgFigma className='text-pink-400' />
                     <SiPostman className='text-orange-500' />
-                    <SiVercel className='text-cyan-300' />
                     <SiNetlify className='text-green-400' />
                     <SiSanity className='text-purple-500' />
                     <SiAppwrite className='text-blue-500' />
+                    <SiSentry className='text-red-400' />
                   </strong>
                 </p>
                 <ul className='text-sm text-gray-400 mt-2 space-y-1 list-disc list-inside'>
