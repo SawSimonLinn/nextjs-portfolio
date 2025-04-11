@@ -1,4 +1,4 @@
-import { InfiniteMovingCardsDemo } from '@/components/InfiniteMovingCardsDemo';
+import { Testimonials } from '@/components/Testimonials';
 import Courses from '@/components/Courses';
 import { GlowingEffectDemo } from '@/components/GlowingEffectDemo';
 import { Hero } from '@/components/Hero';
@@ -19,7 +19,7 @@ export default function Home() {
       <Courses />
       {/* <TimelineDemo /> */}
       <GlowingEffectDemo />
-      <InfiniteMovingCardsDemo />
+      <Testimonials />
       <Contact />
       <Footer />
     </>

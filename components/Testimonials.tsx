@@ -2,7 +2,7 @@
 
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
 
-export function InfiniteMovingCardsDemo() {
+export function Testimonials() {
   return (
     <>
       <div

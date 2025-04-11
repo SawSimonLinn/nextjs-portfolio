@@ -70,8 +70,7 @@ export const projects = [
     ],
     github: 'https://github.com/SawSimonLinn/se_project_newsexplorer',
     demo: 'https://sawsimonlinn.github.io/se_project_newsexplorer/',
-    video:
-      'https://drive.google.com/file/d/1Q-B99oZBSpz23pW0CAN2eK8cf1Me_lqm/view?usp=drive_link',
+    video: '/404',
   },
   {
     id: 2,
@@ -109,8 +108,7 @@ export const projects = [
     ],
     github: 'https://github.com/SawSimonLinn/se_project_react',
     demo: 'https://wtwrapp.jumpingcrab.com/',
-    video:
-      'https://drive.google.com/file/d/1Q-B99oZBSpz23pW0CAN2eK8cf1Me_lqm/view?usp=drive_link',
+    video: '/404',
   },
   {
     id: 3,
@@ -147,8 +145,7 @@ export const projects = [
     ],
     github: 'https://github.com/SawSimonLinn/yc_directory',
     demo: 'https://yc-directory-ten-nu.vercel.app/',
-    video:
-      'https://drive.google.com/file/d/1Q-B99oZBSpz23pW0CAN2eK8cf1Me_lqm/view?usp=drive_link',
+    video: '/404',
   },
   {
     id: 4,
@@ -183,8 +180,7 @@ export const projects = [
     ],
     github: 'https://github.com/SawSimonLinn/jsm_award-winning-website',
     demo: 'https://sawsimonlinn.xyz/',
-    video:
-      'https://drive.google.com/file/d/1Q-B99oZBSpz23pW0CAN2eK8cf1Me_lqm/view?usp=drive_link',
+    video: '/404',
   },
   {
     id: 5,
@@ -219,8 +215,7 @@ export const projects = [
     ],
     github: 'https://github.com/SawSimonLinn/nextjs-portfolio',
     demo: 'https://ecochallengeapp.com/',
-    video:
-      'https://drive.google.com/file/d/1Q-B99oZBSpz23pW0CAN2eK8cf1Me_lqm/view?usp=drive_link',
+    video: '/404',
   },
   {
     id: 6,
@@ -259,8 +254,7 @@ export const projects = [
     ],
     demo: 'https://simonlinn.com/',
     github: 'https://github.com/SawSimonLinn/jsm_movie_app',
-    video:
-      'https://drive.google.com/file/d/1Q-B99oZBSpz23pW0CAN2eK8cf1Me_lqm/view?usp=drive_link',
+    video: '/404',
   },
   {
     id: 7,
@@ -298,8 +292,7 @@ export const projects = [
     ],
     demo: 'https://ecochallengeapp.com/',
     github: 'https://github.com/SawSimonLinn/eco-challenge',
-    video:
-      'https://drive.google.com/file/d/1Q-B99oZBSpz23pW0CAN2eK8cf1Me_lqm/view?usp=drive_link',
+    video: '/404',
   },
   {
     id: 8,
@@ -326,8 +319,7 @@ export const projects = [
     icons: [RiJavascriptFill, FaHtml5, FaCss3, TbApi, CgFigma, SiVercel],
     demo: 'https://sawsimonlinn.github.io/se_project_aroundtheus/',
     github: 'https://github.com/SawSimonLinn/se_project_aroundtheus',
-    video:
-      'https://drive.google.com/file/d/1Q-B99oZBSpz23pW0CAN2eK8cf1Me_lqm/view?usp=drive_link',
+    video: '/404',
   },
   {
     id: 9,
@@ -354,7 +346,6 @@ export const projects = [
     icons: [RiJavascriptFill, FaHtml5, FaCss3, TbApi, CgFigma, SiVercel],
     demo: 'https://sawsimonlinn.github.io/fake_data_generator/',
     github: 'https://github.com/SawSimonLinn/fake_data_generator',
-    video:
-      'https://drive.google.com/file/d/1Q-B99oZBSpz23pW0CAN2eK8cf1Me_lqm/view?usp=drive_link',
+    video: '/404',
   },
 ];
