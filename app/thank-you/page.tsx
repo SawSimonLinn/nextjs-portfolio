@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function ThankYouPage() {
   return (
-    <section className='min-h-screen flex flex-col  items-center justify-between bg-black text-white px-6'>
+    <section className='h-screen flex flex-col  items-center justify-between bg-black text-white px-6'>
       <div className=''></div>
       <div className='max-w-xl text-center'>
         <h1 className='text-4xl font-bold mb-4'>Thank You 💌</h1>
@@ -17,7 +17,7 @@ export default function ThankYouPage() {
           Back to Home
         </Link>
       </div>
-      <span className='text-white/50 text-sm mb-10 tracking-wider'>
+      <span className='text-gray-400 text-sm mb-10 tracking-wider'>
         © 2025 Saw Simon Linn
       </span>
     </section>
