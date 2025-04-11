@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { projects } from '@/data/projects';
 import { HoverBorderGradientDemo } from './HoverBorderGradientDemo';
+import { BackgroundGradient } from '@/components/ui/background-gradient';
 
 export default function ProjectSection() {
   const [showAll, setShowAll] = useState(false);
@@ -22,57 +23,59 @@ export default function ProjectSection() {
           backend brains.
         </p>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
           {visibleProjects.map(project => (
-            <div
+            <BackgroundGradient
               key={project.id}
-              className='bg-white/5 p-4 rounded-lg shadow-sm flex flex-col h-auto justify-between'
+              className='rounded-[20px] max-w-sm bg-white dark:bg-zinc-900'
             >
-              <Link href={`/projects/${project.slug}`}>
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  className='w-full h-60 object-cover rounded-md mb-4'
-                />
-              </Link>
-              <div className='text-left'>
-                <div className='flex justify-between'>
-                  {' '}
-                  <h3 className='text-lg font-semibold'>{project.title}</h3>
-                  <span className='text-sm text-blue-400 mt-1'>
-                    {project.type}
-                  </span>
+              <div className='bg-white/5 p-4 rounded-lg shadow-sm flex flex-col h-auto justify-between'>
+                <Link href={`/projects/${project.slug}`}>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className='w-full h-60 object-cover rounded-md mb-4'
+                  />
+                </Link>
+                <div className='text-left'>
+                  <div className='flex justify-between'>
+                    {' '}
+                    <h3 className='text-lg font-semibold'>{project.title}</h3>
+                    <span className='text-sm text-blue-400 mt-1'>
+                      {project.type}
+                    </span>
+                  </div>
+                  <p className='text-sm text-gray-300 my-3'>
+                    {project.description}
+                  </p>
+                  <div className='flex gap-2 text-lg text-white/70 mb-4'>
+                    {project.icons.map((Icon, i) => (
+                      <Icon
+                        key={`${project.slug}-icon-${i}`}
+                        className='h-5 w-5 text-white/70'
+                      />
+                    ))}
+                  </div>
                 </div>
-                <p className='text-sm text-gray-300 my-3'>
-                  {project.description}
-                </p>
-                <div className='flex gap-2 text-lg text-white/70 mb-4'>
-                  {project.icons.map((Icon, i) => (
-                    <Icon
-                      key={`${project.slug}-icon-${i}`}
-                      className='h-5 w-5 text-white/70'
-                    />
-                  ))}
+                <div className='flex justify-between items-center gap-2 mt-auto'>
+                  <a
+                    href={project.github}
+                    target='_blank'
+                    className='bg-white text-black px-7 py-2 rounded text-sm flex items-center  justify-center gap-2 font-medium hover:bg-white/80 transition'
+                  >
+                    <FaGithub /> GitHub
+                  </a>
+                  <a
+                    href={project.demo}
+                    target='_blank'
+                    className='bg-transparent border border-white flex items-center justify-center gap-2 px-7 py-2 rounded text-sm hover:bg-white hover:text-black transition'
+                  >
+                    <FaExternalLinkAlt className='text-xs' />
+                    Demo
+                  </a>
                 </div>
               </div>
-              <div className='flex justify-between items-center gap-2 mt-auto'>
-                <a
-                  href={project.github}
-                  target='_blank'
-                  className='bg-white text-black px-7 py-2 rounded text-sm flex items-center  justify-center gap-2 font-medium hover:bg-white/80 transition'
-                >
-                  <FaGithub /> GitHub
-                </a>
-                <a
-                  href={project.demo}
-                  target='_blank'
-                  className='bg-transparent border border-white flex items-center justify-center gap-2 px-7 py-2 rounded text-sm hover:bg-white hover:text-black transition'
-                >
-                  <FaExternalLinkAlt className='text-xs' />
-                  Demo
-                </a>
-              </div>
-            </div>
+            </BackgroundGradient>
           ))}
         </div>
 

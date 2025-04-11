@@ -15,7 +15,7 @@ export default function ProjectDetailPage() {
 
   return (
     <>
-      <div className='relative flex h-[40rem] md:h-full w-full items-center justify-center bg-white dark:bg-black'>
+      <div className='relative flex h-full w-full items-center justify-center bg-white dark:bg-black'>
         <div
           className={cn(
             'absolute inset-0',

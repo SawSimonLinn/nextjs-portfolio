@@ -80,7 +80,7 @@ export const projects = [
     image: project2,
     type: 'Fullstack',
     description:
-      'A weather-based clothing recommendation app with authentication and item management functionality.',
+      'A weather-based clothing recommendation web app with authentication and item management functionality.',
     bulletPoints: [
       'User login and authentication with token system',
       'Live weather API with outfit suggestions',
@@ -119,7 +119,7 @@ export const projects = [
     image: project3,
     type: 'Frontend',
     description:
-      'A directory-style listing app built with Sanity CMS and styled in Tailwind CSS.',
+      'A directory-style start-up listing web app built with Next.js, TypeScript, Sanity CMS and styled in Tailwind CSS.',
     bulletPoints: [
       'Data-driven directory using Sanity backend',
       'Next.js dynamic routing and SSR',
@@ -228,7 +228,7 @@ export const projects = [
     title: 'JSM Movie App',
     type: 'Frontend',
     description:
-      'JSM Movie App is a modern React-based movie explorer that uses the TMDB API for real-time data, styled with Tailwind CSS, and powered by Appwrite.',
+      'JSM Movie App is a modern React-based movie explorer that uses the TMDB API for real-time data, and powered by Appwrite.',
     image: project6,
     bulletPoints: [
       'Real-time movie data from TMDB API',
@@ -265,7 +265,7 @@ export const projects = [
   {
     id: 7,
     slug: 'eco-challenge-web-app',
-    title: 'Eco Challenge Web App',
+    title: 'Eco Challenge',
     type: 'Fullstack',
     description:
       'Eco Challenge is a web application designed to help users achieve their environmental goals by completing daily challenges.',
@@ -335,7 +335,7 @@ export const projects = [
     title: 'Fake Data Generator',
     type: 'Frontend',
     description:
-      '    A modern Fake Data Generator that allows users to generate random fake data in multiple formats (JSON, HTML, JavaScript, TypeScript, Python, CSV, SQL).',
+      '    A modern Fake Data Generator that allows users to generate random fake data in multiple formats (JSON, JavaScript, Python, and etc,.).',
     bulletPoints: [
       'Multiple data formats supported: JSON, HTML, JavaScript, TypeScript, Python, CSV, SQL',
       'User-friendly interface with real-time data generation',

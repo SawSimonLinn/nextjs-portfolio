@@ -25,15 +25,18 @@ const Contact = () => {
     if (response.ok) {
       window.location.href = '/thank-you';
     } else {
-      alert('Something went wrong. Please try again later.');
+      alert('Something went wrong');
     }
   };
 
   return (
-    <section id='contact' className='w-full px-4 py-20 bg-black text-white'>
+    <section
+      id='contact'
+      className='w-full px-4 pt-20 bg-neutral-300 text-white'
+    >
       <Vortex
         backgroundColor='black'
-        className='flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full'
+        className='flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-auto'
       >
         <div className='max-w-4xl mx-auto text-center'>
           <h2 className='text-2xl md:text-4xl font-bold mb-4'>Let’s Connect</h2>
@@ -52,21 +55,21 @@ const Contact = () => {
               name='name'
               placeholder='Your Name'
               required
-              className='bg-white/10 text-white px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-white/20'
+              className='bg-neutral-900/70 text-white px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-white/20'
             />
             <input
               type='email'
               name='email'
               placeholder='Your Email'
               required
-              className='bg-white/10 text-white px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-white/20'
+              className='bg-neutral-900/70 text-white px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-white/20'
             />
             <textarea
               name='message'
               placeholder='Your Message'
               rows={5}
               required
-              className='bg-white/10 text-white px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-white/20 md:col-span-2'
+              className='bg-neutral-900/70 text-white px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-white/20 md:col-span-2'
             />
             <div className='md:col-span-2 flex justify-center'>
               <HoverBorderGradientDemo text='Send message' />
