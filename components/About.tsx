@@ -35,13 +35,6 @@ const About = () => {
 
   return (
     <>
-      <button
-        onClick={() => setIsDark(!isDark)}
-        className='fixed top-4 right-4 z-50 px-4 py-2 bg-gray-200 text-black dark:bg-gray-800 dark:text-white rounded-md shadow-md transition'
-      >
-        {isDark ? '☀️ Light Mode' : '🌙 Dark Mode'}
-      </button>
-
       <motion.section
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

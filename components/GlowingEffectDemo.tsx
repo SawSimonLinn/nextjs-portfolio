@@ -16,13 +16,6 @@ export function GlowingEffectDemo() {
 
   return (
     <>
-      <button
-        onClick={() => setIsDark(!isDark)}
-        className='fixed top-4 right-4 z-50 px-4 py-2 bg-gray-200 text-black dark:bg-gray-800 dark:text-white rounded-md shadow-md transition'
-      >
-        {isDark ? '☀️ Light Mode' : '🌙 Dark Mode'}
-      </button>
-
       <section className='pb-30 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300'>
         <div className='max-w-7xl mx-auto flex flex-col items-center py-20 px-4 md:px-8 lg:px-10'>
           <motion.h2

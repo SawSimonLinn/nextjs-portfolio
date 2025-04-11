@@ -21,13 +21,6 @@ export default function ProjectSection() {
 
   return (
     <>
-      <button
-        onClick={() => setIsDark(!isDark)}
-        className='fixed top-4 right-4 z-50 px-4 py-2 bg-gray-200 text-black dark:bg-gray-800 dark:text-white rounded-md shadow-md transition'
-      >
-        {isDark ? '☀️ Light Mode' : '🌙 Dark Mode'}
-      </button>
-
       <motion.section
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -92,7 +85,7 @@ export default function ProjectSection() {
                         {project.icons.map((Icon, i) => (
                           <Icon
                             key={`${project.slug}-icon-${i}`}
-                            className='h-5 w-5 text-white/70'
+                            className='h-5 w-5 text-black/60 dark:text-white/70'
                           />
                         ))}
                       </div>
@@ -101,14 +94,14 @@ export default function ProjectSection() {
                       <a
                         href={project.github}
                         target='_blank'
-                        className='bg-white text-black px-7 py-2 rounded text-sm flex items-center justify-center gap-2 font-medium hover:bg-white/80 transition'
+                        className='bg-black text-white hover:bg-black/70  dark:bg-white dark:text-black px-7 py-2 rounded text-sm flex items-center justify-center gap-2 font-medium dark:hover:bg-white/80 transition'
                       >
                         <FaGithub /> GitHub
                       </a>
                       <a
                         href={project.demo}
                         target='_blank'
-                        className='bg-transparent border border-white flex items-center justify-center gap-2 px-7 py-2 rounded text-sm hover:bg-white hover:text-black transition'
+                        className='bg-transparent border dark:border-white border-black flex items-center justify-center gap-2 px-7 py-2 rounded text-sm hover:bg-black/10 dark:hover:bg-white hover:text-black transition'
                       >
                         <FaExternalLinkAlt className='text-xs' />
                         Demo

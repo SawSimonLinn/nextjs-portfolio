@@ -21,13 +21,6 @@ export default function ProjectDetailPage() {
 
   return (
     <>
-      <button
-        onClick={() => setIsDark(!isDark)}
-        className='fixed top-4 right-4 z-50 px-4 py-2 bg-gray-200 text-black dark:bg-gray-800 dark:text-white rounded-md shadow-md transition'
-      >
-        {isDark ? '☀️ Light Mode' : '🌙 Dark Mode'}
-      </button>
-
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -91,14 +84,14 @@ export default function ProjectDetailPage() {
 
             <div>
               <h2 className='text-2xl font-semibold'>Skills & Technologies</h2>
-              <div className='flex flex-wrap gap-3 text-sm text-white dark:text-white/80 mt-2'>
+              <div className='flex flex-wrap gap-3 text-sm text-black dark:text-white/80 mt-2'>
                 {project.skills.map((skill, i) => (
                   <motion.span
                     key={i}
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.4 + i * 0.05 }}
-                    className='bg-white/10 dark:bg-white/10 px-3 py-1 rounded'
+                    className='bg-black/10 dark:bg-white/10 px-3 py-1 rounded'
                   >
                     {skill}
                   </motion.span>
@@ -128,7 +121,7 @@ export default function ProjectDetailPage() {
               transition={{ duration: 0.7, delay: 0.3 }}
             >
               <h2 className='text-2xl font-semibold mb-2'>Project Demo</h2>
-              <div className='aspect-video w-full'>
+              <div className='aspect-video w-full border '>
                 <iframe
                   src={project.video}
                   title='Project demo'
