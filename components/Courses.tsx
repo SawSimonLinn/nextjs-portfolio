@@ -8,6 +8,7 @@ import Certificate3 from '@/public/jonas.png';
 import Certificate4 from '@/public/angela-yu.png';
 import Certificate5 from '@/public/react-front-to-back.png';
 import BrowserMockup from '@/components/BrowserMockup';
+import { motion } from 'framer-motion';
 
 const content = [
   {
@@ -94,7 +95,14 @@ const content = [
 
 const Courses = () => {
   return (
-    <div id='certifications'>
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+      viewport={{ once: false }}
+      id='certifications'
+      className='w-full px-4 pb-20 bg-black text-white'
+    >
       <div className='max-w-7xl mx-auto flex flex-col items-center py-20 px-4 md:px-8 lg:px-10'>
         <h2 className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl'>
           Courses & Certificates
@@ -109,7 +117,7 @@ const Courses = () => {
           <StickyScroll content={content} />
         </div>
       </BrowserMockup>
-    </div>
+    </motion.section>
   );
 };
 

@@ -2,6 +2,7 @@
 
 import React, { useRef } from 'react';
 import { HoverBorderGradientDemo } from './HoverBorderGradientDemo';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -29,15 +30,32 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className='w-full px-4 py-20 bg-black text-white'>
-      <div className='max-w-4xl mx-auto text-center'>
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+      viewport={{ once: false }}
+      id='contact'
+      className='w-full px-4 py-20 bg-black text-white'
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className='max-w-4xl mx-auto text-center'
+      >
         <h2 className='text-2xl md:text-4xl font-bold mb-4'>Let’s Connect</h2>
         <p className='text-neutral-700 dark:text-neutral-300 mb-10'>
           Whether you’re interested in working together or just want to say hi,
           my inbox is always open.
         </p>
 
-        <form
+        <motion.form
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
           ref={formRef}
           onSubmit={handleSubmit}
           className='grid gap-6 md:grid-cols-2'
@@ -63,12 +81,16 @@ const Contact = () => {
             required
             className='bg-white/10 text-white px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-white/20 md:col-span-2'
           />
-          <button className='md:col-span-2 flex justify-center'>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className='md:col-span-2 flex justify-center'
+          >
             <HoverBorderGradientDemo text='Send message' />
-          </button>
-        </form>
-      </div>
-    </section>
+          </motion.button>
+        </motion.form>
+      </motion.div>
+    </motion.section>
   );
 };
 

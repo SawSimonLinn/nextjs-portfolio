@@ -37,3 +37,80 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: black;
+  z-index: 40;
+  opacity: 1;
+  pointer-events: none;
+  animation: fadeOutOverlay 1.5s ease forwards;
+  animation-delay: 4.6s;
+}
+
+@keyframes fadeOutOverlay {
+  to {
+    opacity: 0;
+  }
+}
+
+.site-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 4.6s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  animation: typing 4s steps(25, end) forwards, blink 0.75s step-end infinite;
+  max-width: 0;
+}
+@keyframes typing {
+  to {
+    max-width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.welcome-animation {
+  animation: welcomeGrow 2s ease-in-out forwards;
+}
+
+@keyframes welcomeGrow {
+  0% {
+    font-size: 1rem;
+    opacity: 0.5;
+    filter: blur(5px);
+    transform: scale(0.9);
+  }
+  50% {
+    font-size: 3rem;
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1.1);
+  }
+  100% {
+    font-size: 5rem;
+    opacity: 0;
+    filter: blur(20px);
+    transform: scale(1.3);
+  }
+}

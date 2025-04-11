@@ -10,44 +10,66 @@ import {
 import { BiLogoTypescript } from 'react-icons/bi';
 import {
   SiPostman,
-  SiVercel,
   SiNetlify,
   SiSanity,
   SiAppwrite,
   SiSentry,
 } from 'react-icons/si';
 import { TypewriterEffectSmooth } from '@/components/ui/typewriter-effect';
+import { motion } from 'framer-motion';
 
 const About = () => {
   const words = [
-    {
-      text: 'Software',
-    },
-    {
-      text: 'Developer',
-    },
-    {
-      text: 'with',
-    },
-    {
-      text: 'powerful',
-      className: 'text-blue-500 dark:text-blue-500',
-    },
-    {
-      text: 'intent.',
-    },
+    { text: 'Software' },
+    { text: 'Developer' },
+    { text: 'with' },
+    { text: 'powerful', className: 'text-blue-500 dark:text-blue-500' },
+    { text: 'intent.' },
   ];
+
   return (
-    <section id='about' className='w-full px-10 pt-20 bg-black text-white'>
-      <div className='flex flex-col items-center justify-center h-[10rem]  '>
-        <p className='text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  '>
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+      viewport={{ once: false }}
+      id='about'
+      className='w-full px-10 py-20 bg-black text-white'
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        viewport={{ once: false }}
+        className='flex flex-col items-center justify-center h-[10rem]'
+      >
+        <p className='text-neutral-600 dark:text-neutral-200 text-xs sm:text-base'>
           Turning ideas into clean digital realities
         </p>
         <TypewriterEffectSmooth words={words} />
-      </div>
-      <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start'>
-        {/* About Text */}
-        <div>
+      </motion.div>
+
+      <motion.div
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.2,
+            },
+          },
+        }}
+        className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start'
+      >
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 0.6 }}
+        >
           <h2 className='text-3xl font-bold mb-6'>About Me</h2>
           <p className='text-base leading-relaxed text-gray-300 mb-4'>
             I’m{' '}
@@ -97,13 +119,17 @@ const About = () => {
               if you’d like to work together.
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Skills Section */}
-        <div>
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 0.6 }}
+        >
           <h2 className='text-3xl font-bold mb-6'>Skills I Work With</h2>
           <div className='grid grid-cols-2 gap-4'>
-            {/* Skill Card Group */}
             <div className='space-y-4'>
               <div className='bg-white/5 border border-white/10 p-4 rounded-lg backdrop-blur-sm'>
                 <p className='text-sm text-gray-200 font-semibold'>
@@ -175,9 +201,9 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </motion.div>
+      </motion.div>
+    </motion.section>
   );
 };
 

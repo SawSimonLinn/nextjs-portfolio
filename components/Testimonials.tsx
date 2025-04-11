@@ -1,13 +1,18 @@
 'use client';
 
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
+import { motion } from 'framer-motion';
 
 export function Testimonials() {
   return (
     <>
-      <div
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        viewport={{ once: false }}
         id='testimonials'
-        className='h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'
+        className='h-full rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] pb-10 items-center justify-center relative overflow-hidden'
       >
         <div className='max-w-7xl mx-auto flex flex-col items-center py-20 px-4 md:px-8 lg:px-10'>
           <h2 className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl'>
@@ -24,7 +29,7 @@ export function Testimonials() {
           direction='right'
           speed='slow'
         />
-      </div>
+      </motion.section>
     </>
   );
 }
