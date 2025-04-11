@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Preloader from '@/components/Preloader';
+import ClientLayout from '@/components/ClientLayout';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -15,22 +16,20 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Saw Simon Linn',
-  description: 'Next.js App Portfolio',
+  description: 'Mordern Next.js App Portfolio',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang='en'>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased transition-body`}
       >
-        {' '}
-        <Preloader />
-        <div className='site-content'>{children}</div>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

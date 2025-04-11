@@ -26,7 +26,7 @@ export function Hero() {
           Saw Simon Linn, <br />
           <ContainerTextFlip
             words={['Frontend', 'React', 'Next.js', 'JavaScript']}
-            className='text-3xl me-2 md:text-4xl lg:text-7xl text-neutral-300 dark:text-white-300'
+            className='text-3xl me-2 md:text-4xl lg:text-7xl text-neutral-700 dark:text-neutral-300'
           />
           Developer.
         </h2>

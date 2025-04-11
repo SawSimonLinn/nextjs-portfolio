@@ -1,7 +1,9 @@
 'use client';
-import React from 'react';
+
+import React, { useEffect, useState } from 'react';
 import { StickyScroll } from '@/components/ui/sticky-scroll-reveal';
 import Image from 'next/image';
+import Link from 'next/link';
 import Certificate1 from '@/public/tripleten.png';
 import Certificate2 from '@/public/jsmastery.png';
 import Certificate3 from '@/public/jonas.png';
@@ -22,7 +24,7 @@ const content = [
           width={300}
           height={300}
           className='h-full w-full object-cover'
-          alt='linear board demo'
+          alt='TripleTen Certificate'
         />
       </div>
     ),
@@ -38,7 +40,7 @@ const content = [
           width={300}
           height={300}
           className='h-full w-full object-cover'
-          alt='linear board demo'
+          alt='JavaScript Mastery Certificate'
         />
       </div>
     ),
@@ -54,7 +56,7 @@ const content = [
           width={300}
           height={300}
           className='h-full w-full object-cover'
-          alt='linear board demo'
+          alt='JavaScript Course Certificate'
         />
       </div>
     ),
@@ -70,7 +72,7 @@ const content = [
           width={300}
           height={300}
           className='h-full w-full object-cover'
-          alt='linear board demo'
+          alt='Full-Stack Bootcamp Certificate'
         />
       </div>
     ),
@@ -86,7 +88,7 @@ const content = [
           width={300}
           height={300}
           className='h-full w-full object-cover'
-          alt='linear board demo'
+          alt='React Course Certificate'
         />
       </div>
     ),
@@ -94,30 +96,46 @@ const content = [
 ];
 
 const Courses = () => {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', isDark);
+  }, [isDark]);
+
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: 'easeOut' }}
-      viewport={{ once: false }}
-      id='certifications'
-      className='w-full px-4 pb-20 bg-black text-white'
-    >
-      <div className='max-w-7xl mx-auto flex flex-col items-center py-20 px-4 md:px-8 lg:px-10'>
-        <h2 className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl'>
-          Courses & Certificates
-        </h2>
-        <p className='text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-2xl text-center'>
-          A collection of hands-on courses and bootcamps that shaped my
-          full-stack journey—from fundamentals to real-world projects.
-        </p>
-      </div>
-      <BrowserMockup>
-        <div className='mx-auto'>
-          <StickyScroll content={content} />
+    <>
+      <button
+        onClick={() => setIsDark(!isDark)}
+        className='fixed top-4 right-4 z-50 px-4 py-2 bg-gray-200 text-black dark:bg-gray-800 dark:text-white rounded-md shadow-md transition'
+      >
+        {isDark ? '☀️ Light Mode' : '🌙 Dark Mode'}
+      </button>
+
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        viewport={{ once: false }}
+        id='certifications'
+        className='w-full px-4 pb-20 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300'
+      >
+        <div className='max-w-7xl mx-auto flex flex-col items-center py-20 px-4 md:px-8 lg:px-10'>
+          <h2 className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl'>
+            Courses & Certificates
+          </h2>
+          <p className='text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-2xl text-center'>
+            A collection of hands-on courses and bootcamps that shaped my
+            full-stack journey—from fundamentals to real-world projects.
+          </p>
         </div>
-      </BrowserMockup>
-    </motion.section>
+
+        <BrowserMockup>
+          <div className='mx-auto'>
+            <StickyScroll content={content} />
+          </div>
+        </BrowserMockup>
+      </motion.section>
+    </>
   );
 };
 
