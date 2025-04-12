@@ -14,10 +14,8 @@ export default function Home() {
       <NavbarDemo />
       <Hero />
       <About />
-      {/* <FocusCardsDemo /> */}
       <ProjectSection />
       <Courses />
-      {/* <TimelineDemo /> */}
       <GlowingEffectDemo />
       <Testimonials />
       <Contact />

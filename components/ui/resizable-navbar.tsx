@@ -10,7 +10,7 @@ import {
 import Link from 'next/link';
 import React, { useRef, useState } from 'react';
 import Image from 'next/image';
-import simonLogo from '@/public/favicon.png';
+import simonLogo from '@/public/logo.png';
 
 interface NavbarProps {
   children: React.ReactNode;
