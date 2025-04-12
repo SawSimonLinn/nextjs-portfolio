@@ -10,7 +10,7 @@ export interface ContainerTextFlipProps {
   className?: string;
   textClassName?: string;
   animationDuration?: number;
-  onWordChange?: (word: string) => void; // Add onWordChange prop
+  onWordChange?: (word: string) => void;
 }
 
 export function ContainerTextFlip({
@@ -47,7 +47,7 @@ export function ContainerTextFlip({
 
   useEffect(() => {
     if (onWordChange) {
-      onWordChange(words[currentWordIndex]); // Notify parent of the current word
+      onWordChange(words[currentWordIndex]);
     }
   }, [currentWordIndex, words, onWordChange]);
 

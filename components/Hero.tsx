@@ -8,7 +8,7 @@ import { HoverBorderGradientDemo } from '@/components/HoverBorderGradientDemo';
 import Link from 'next/link';
 
 export function Hero() {
-  const [currentWord, setCurrentWord] = useState('Software'); // State to track the current word
+  const [currentWord, setCurrentWord] = useState('');
 
   return (
     <div className='relative flex h-[40rem] md:h-screen w-full items-center justify-center bg-white dark:bg-black'>
@@ -31,7 +31,7 @@ export function Hero() {
           <ContainerTextFlip
             words={['Frontend', 'React', 'Next.js', 'JavaScript', 'Software']}
             className='text-3xl me-2 md:text-4xl lg:text-7xl text-neutral-700 dark:text-neutral-300'
-            onWordChange={word => setCurrentWord(word)} // Update the state when the word changes
+            onWordChange={word => setCurrentWord(word)}
           />
           {currentWord === 'Software' ? 'Engineer.' : 'Developer.'}
         </h2>
