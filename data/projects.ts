@@ -213,8 +213,8 @@ export const projects = [
       FaHtml5,
       FaCss3,
     ],
+    demo: 'https://www.sawsimonlinn.com/',
     github: 'https://github.com/SawSimonLinn/nextjs-portfolio',
-    demo: 'https://sawsimonlinn.com/',
     video: '/404',
   },
   {
