@@ -30,11 +30,27 @@
 
 ## 📸 Screenshot
 
-<img src="./public/001.PNG" alt="hero section" width="200">
-<img src="./public/002.PNG" alt="hero section" width="200">
-<img src="./public/003.PNG" alt="hero section" width="200">
-<img src="./public/004.PNG" alt="hero section" width="200">
-<img src="./public/005.PNG" alt="hero section" width="200">
+<p align="center">
+  <img src="./public/001.PNG" alt="hero section" width="200">
+  <img src="./public/002.PNG" alt="hero section" width="200">
+  <img src="./public/003.PNG" alt="hero section" width="200">
+  <img src="./public/004.PNG" alt="hero section" width="200">
+  <img src="./public/005.PNG" alt="hero section" width="200">
+</p>
+
+<table align="center">
+  <tr>
+    <td colspan="2"><img src="./public/001.png" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><img src="./public/001.png" width="100%"/></td>
+    <td><img src="./public/003.png" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><img src="./public/004.png" width="100%"/></td>
+    <td><img src="./public/005.png" width="100%"/></td>
+  </tr>
+</table>
 
 ---
 
