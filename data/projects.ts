@@ -214,7 +214,7 @@ export const projects = [
       FaCss3,
     ],
     github: 'https://github.com/SawSimonLinn/nextjs-portfolio',
-    demo: 'https://ecochallengeapp.com/',
+    demo: 'https://sawsimonlinn.com/',
     video: '/404',
   },
   {
