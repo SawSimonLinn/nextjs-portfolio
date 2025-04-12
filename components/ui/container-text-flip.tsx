@@ -10,6 +10,7 @@ export interface ContainerTextFlipProps {
   className?: string;
   textClassName?: string;
   animationDuration?: number;
+  onWordChange?: (word: string) => void; // Add onWordChange prop
 }
 
 export function ContainerTextFlip({
@@ -18,6 +19,7 @@ export function ContainerTextFlip({
   className,
   textClassName,
   animationDuration = 700,
+  onWordChange, // Destructure onWordChange
 }: ContainerTextFlipProps) {
   const id = useId();
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -42,6 +44,12 @@ export function ContainerTextFlip({
 
     return () => clearInterval(intervalId);
   }, [words, interval]);
+
+  useEffect(() => {
+    if (onWordChange) {
+      onWordChange(words[currentWordIndex]); // Notify parent of the current word
+    }
+  }, [currentWordIndex, words, onWordChange]);
 
   return (
     <motion.div

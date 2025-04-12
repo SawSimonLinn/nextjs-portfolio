@@ -1,11 +1,15 @@
+'use client';
+
 import { cn } from '@/lib/utils';
-import React from 'react';
+import React, { useState } from 'react';
 import { BackgroundLines } from '@/components/ui/background-lines';
 import { ContainerTextFlip } from '@/components/ui/container-text-flip';
 import { HoverBorderGradientDemo } from '@/components/HoverBorderGradientDemo';
 import Link from 'next/link';
 
 export function Hero() {
+  const [currentWord, setCurrentWord] = useState('Software'); // State to track the current word
+
   return (
     <div className='relative flex h-[40rem] md:h-screen w-full items-center justify-center bg-white dark:bg-black'>
       <div
@@ -25,12 +29,13 @@ export function Hero() {
         <h2 className='bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-3xl md:text-4xl lg:text-7xl font-sans py-6 md:py-6 relative z-20 font-bold tracking-tight'>
           Saw Simon Linn, <br />
           <ContainerTextFlip
-            words={['Frontend', 'React', 'Next.js', 'JavaScript']}
+            words={['Frontend', 'React', 'Next.js', 'JavaScript', 'Software']}
             className='text-3xl me-2 md:text-4xl lg:text-7xl text-neutral-700 dark:text-neutral-300'
+            onWordChange={word => setCurrentWord(word)} // Update the state when the word changes
           />
-          Developer.
+          {currentWord === 'Software' ? 'Engineer.' : 'Developer.'}
         </h2>
-        <p className='max-w-2xl mx-auto text-sm md:text-xl text-neutral-700 dark:text-neutral-200 text-center  '>
+        <p className='max-w-2xl mx-auto text-sm md:text-xl text-neutral-700 dark:text-neutral-200 text-center'>
           A TripleTen graduate from California, specializing in building modern,
           user-friendly websites and creating responsive web designs.
         </p>

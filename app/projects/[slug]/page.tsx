@@ -121,7 +121,7 @@ export default function ProjectDetailPage() {
               transition={{ duration: 0.7, delay: 0.3 }}
             >
               <h2 className='text-2xl font-semibold mb-2'>Project Demo</h2>
-              <div className='aspect-video w-full border '>
+              <div className='aspect-video w-full border'>
                 <iframe
                   src={project.video}
                   title='Project demo'
