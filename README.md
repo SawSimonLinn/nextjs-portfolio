@@ -43,7 +43,7 @@
     <td colspan="2"><img src="./public/001.png" width="100%"/></td>
   </tr>
   <tr>
-    <td><img src="./public/001.png" width="100%"/></td>
+    <td><img src="./public/002.png" width="100%"/></td>
     <td><img src="./public/003.png" width="100%"/></td>
   </tr>
   <tr>
