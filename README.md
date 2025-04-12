@@ -1,37 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<img src="./public/heading.PNG" alt="next.js portfolio heading img">
 
-## Getting Started
+<p align="center">
+  <img src="https://img.shields.io/badge/NEXT.JS-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/TAILWIND%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/ACETERNITY%20UI-111827?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framer%20Motion-EF4444?style=for-the-badge&logo=framer&logoColor=white" />
+</p>
 
-First, run the development server:
+<h2 align="center">✨ Modern Next.js Portfolio ✨</h2>
+
+<p align="center">
+  A clean, animated portfolio crafted from scratch using <strong>Next.js</strong>, <strong>TailwindCSS</strong>, and <strong>Aceternity UI</strong>. 
+  This project features beautiful animations powered by <strong>Framer Motion</strong>, dynamic project routing, and smooth scroll effects — all wrapped in a responsive layout.
+</p>
+
+---
+
+## 🔥 Features
+
+- ⚡ Built with **Next.js 14** & **Tailwind CSS**
+- 🎨 Styled with **Aceternity UI** components
+- 🎞️ Smooth animations using **Framer Motion**
+- 🧠 Dynamic routing via `/projects/[slug]`
+- 📱 Fully responsive & SEO-optimized
+- 🌗 Easy to extend with light/dark mode toggle (optional)
+- 🥷 Custom preloader with typing + welcome effect
+
+---
+
+## 📸 Screenshot
+
+<img src="./public/001.PNG" alt="hero section" width="200">
+<img src="./public/002.PNG" alt="hero section" width="200">
+<img src="./public/003.PNG" alt="hero section" width="200">
+<img src="./public/004.PNG" alt="hero section" width="200">
+<img src="./public/005.PNG" alt="hero section" width="200">
+
+---
+
+## 🚀 Live Demo
+
+👉 [Visit Portfolio Website](https://www.sawsimonlinn.com)
+
+---
+
+## 🛠️ Setup & Run
 
 ```bash
+git clone https://github.com/SawSimonLinn/nextjs-portfolio.git
+cd nextjs-portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💬 Feedback
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Feel free to connect with me or drop feedback via [LinkedIn](https://www.linkedin.com/in/sawsimonlinn/)
+- Let’s build something magical together! 💻✨
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# nextjs-portfolio
+Simon Linn 🖤
