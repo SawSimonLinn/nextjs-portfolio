@@ -92,7 +92,7 @@ export default function GetResumePage() {
           <h2 className='text-3xl md:text-4xl dark:text-white text-black font-bold text-center mb-4'>
             Before Downloading My Resume
           </h2>
-          <p className='text-center dark:text-white text-blue-400 text-sm'>
+          <p className='text-center dark:text-white text-blue-400 dark:text-yellow-300 text-sm'>
             Quick peek at my journey & skills.
           </p>
 
@@ -113,7 +113,7 @@ export default function GetResumePage() {
           <select
             name='role'
             required
-            className='w-full border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-900 px-3 py-4 rounded-md text-black dark:text-white'
+            className='w-full border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-900 px-3 py-5 rounded-md text-black dark:text-white'
           >
             <option value=''>I am a...</option>
             <option value='developer'>Developer</option>
