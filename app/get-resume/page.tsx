@@ -87,7 +87,7 @@ export default function GetResumePage() {
         <form
           id='download'
           onSubmit={handleSubmit}
-          className='bg-white dark:bg-black w-full flex flex-col justify-center items-center max-w-4xl mx-auto p-10 lg:py-25 lg:px-40 rounded-lg shadow-md space-y-5 text-black dark:text-white'
+          className='bg-white dark:bg-black w-full flex flex-col justify-center items-center max-w-4xl mx-auto px-5 py-10 lg:py-25 lg:px-40 rounded-lg shadow-md space-y-5 text-black dark:text-white'
         >
           <h2 className='text-3xl md:text-4xl dark:text-white text-black font-bold text-center mb-4'>
             Before Downloading My Resume
@@ -121,8 +121,11 @@ export default function GetResumePage() {
             <option value='user'>Just browsing</option>
           </select>
 
-          <strong className='items-center mt-5 flex justify-center px-20 w-fit bg-blue-500 hover:bg-blue-400 dark:bg-yellow-500 dark:hover:bg-yellow-400 text-white dark:text-black hover:text-neutral-900 hover:border-neutral-900 py-4 rounded-xl font-bold uppercase'>
-            <button type='submit' className='cursor-pointer uppercase'>
+          <strong className='items-center mt-5 flex justify-center w-fit bg-blue-500 hover:bg-blue-400 dark:bg-yellow-500 dark:hover:bg-yellow-400 text-white dark:text-black hover:text-neutral-900 hover:border-neutral-900 rounded-xl font-bold uppercase'>
+            <button
+              type='submit'
+              className='cursor-pointer px-20 py-4 uppercase'
+            >
               Download now
             </button>
           </strong>
