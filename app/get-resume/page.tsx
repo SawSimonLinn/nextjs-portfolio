@@ -58,7 +58,7 @@ export default function GetResumePage() {
 
   return (
     <div className='min-h-screen flex flex-col items-center justify-center bg-neutral-200 dark:bg-neutral-900'>
-      <div className='w-full flex flex-col lg:flex-row justify-center items-center bg-white dark:bg-black py-50  px-6'>
+      <div className='w-full flex flex-col lg:flex-row justify-center items-center bg-white dark:bg-black py-40 lg:py-50  px-6'>
         <div className='text w-full lg:w-2/3 text-center lg:text-left'>
           <p className='text-blue-500 dark:text-yellow-500 font-extrabold text-xl uppercase mb-2'>
             Saw Simon Linn{' '}
