@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { FaReact, FaHtml5, FaCss3, FaGithub } from 'react-icons/fa';
+import { FaRegNewspaper } from 'react-icons/fa6';
 import { CgFigma } from 'react-icons/cg';
 import {
   RiNextjsFill,
@@ -17,6 +18,7 @@ import {
 } from 'react-icons/si';
 import { TypewriterEffectSmooth } from '@/components/ui/typewriter-effect';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const About = () => {
   const [isDark, setIsDark] = useState(false);
@@ -107,17 +109,15 @@ const About = () => {
               are beautiful, responsive, and meaningful.
             </p>
             <div className='mt-6'>
-              <a
-                href='https://github.com/SawSimonLinn'
-                target='_blank'
-                rel='noopener noreferrer'
+              <Link
+                href='/get-resume'
                 className='inline-block px-6 py-2 border border-black/20 rounded-md text-sm font-bold text-white bg-white/10 hover:bg-white/20 dark:border-white/10 dark:text-white transition-all duration-200'
               >
-                <span className='flex items-center gap-2  text-gray-500 dark:text-gray-400'>
-                  <FaGithub className='text-gray-500 dark:text-gray-300' />
-                  View My GitHub
-                </span>
-              </a>
+                <button className='flex items-center gap-2  text-gray-500 dark:text-gray-400 transition'>
+                  <FaRegNewspaper className='text-gray-500 dark:text-gray-300' />
+                  Download My Resume
+                </button>
+              </Link>
               <p className='text-sm text-gray-500 dark:text-gray-400 mt-2'>
                 Or feel free to{' '}
                 <a

@@ -149,7 +149,7 @@ export default function ProjectDetailPage() {
             </div>
 
             <div className='mt-10 text-center'>
-              <Link href='/' className='text-blue-500 hover:underline'>
+              <Link href='/#projects' className='text-blue-500 hover:underline'>
                 ← Back to Projects
               </Link>
             </div>
