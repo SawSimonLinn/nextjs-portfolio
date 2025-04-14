@@ -76,7 +76,7 @@ export default function GetResumePage() {
           </p>
           <a
             href='#download'
-            className='inline-block mt-8 bg-blue-500 hover:bg-blue-400 dark:bg-yellow-500 dark:hover:bg-yellow-400 text-white dark:text-black py-5 px-20 text-sm font-bold uppercase rounded-xl  transition cursor-pointer'
+            className='inline-block mt-8 bg-blue-500 hover:bg-blue-400 dark:bg-yellow-500 dark:hover:bg-yellow-600 text-white dark:text-black py-5 px-20 text-sm font-bold uppercase rounded-xl  transition cursor-pointer'
           >
             Download now
           </a>
@@ -92,7 +92,7 @@ export default function GetResumePage() {
           <h2 className='text-3xl md:text-4xl dark:text-white text-black font-bold text-center mb-4'>
             Before Downloading My Resume
           </h2>
-          <p className='text-center dark:text-white text-blue-400 dark:text-yellow-300 text-sm'>
+          <p className='text-center dark:text-white text-blue-400 text-sm'>
             Quick peek at my journey & skills.
           </p>
 
@@ -121,14 +121,11 @@ export default function GetResumePage() {
             <option value='user'>Just browsing</option>
           </select>
 
-          <strong className='items-center mt-5 flex justify-center w-fit bg-blue-500 hover:bg-blue-400 dark:bg-yellow-500 dark:hover:bg-yellow-400 text-white dark:text-black hover:text-neutral-900 hover:border-neutral-900 rounded-xl font-bold uppercase'>
-            <button
-              type='submit'
-              className='cursor-pointer px-20 py-4 uppercase'
-            >
+          <button type='submit' className='cursor-pointer text-sm uppercase'>
+            <strong className='mt-5 flex bg-blue-500 hover:bg-blue-400 dark:bg-yellow-500 dark:hover:bg-yellow-600 px-20 py-5  text-white dark:text-black rounded-xl font-bold uppercase'>
               Download now
-            </button>
-          </strong>
+            </strong>
+          </button>
         </form>
       </div>
     </div>
