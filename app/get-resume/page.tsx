@@ -9,9 +9,13 @@ export default function GetResumePage() {
     e.preventDefault();
 
     const form = e.currentTarget;
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const role = form.role.value;
+    const name = (
+      form.elements.namedItem('name') as HTMLInputElement
+    ).value.trim();
+    const email = (
+      form.elements.namedItem('email') as HTMLInputElement
+    ).value.trim();
+    const role = (form.elements.namedItem('role') as HTMLSelectElement).value;
 
     if (!name || !email || !role) {
       alert('Please fill in all required fields.');
