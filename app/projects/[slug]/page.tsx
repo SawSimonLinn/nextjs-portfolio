@@ -3,7 +3,6 @@
 import { projects } from '@/data/projects';
 import { notFound, useParams } from 'next/navigation';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
@@ -43,7 +42,7 @@ export default function ProjectDetailPage() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className='z-10 px-6 py-20'
         >
-          <div className='max-w-5xl mx-auto space-y-10'>
+          <div className='2xl:w-7xl xl:w-6xl lg:w-4xl md:w-2xl sm:w-xl mx-auto space-y-10'>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -51,13 +50,20 @@ export default function ProjectDetailPage() {
               className='text-center'
             >
               <h1 className='text-4xl font-bold mb-4'>{project.title}</h1>
-              <Image
+              <div className='w-full lg:h-[750px] h-[550px] border-1 border-black dark:border-white  overflow-hidden shadow-xl mx-auto'>
+                <iframe
+                  src={project.demo}
+                  className='w-full h-full'
+                  allowFullScreen
+                ></iframe>
+              </div>
+              {/* <Image
                 src={project.image}
                 alt={project.title}
                 width={800}
                 height={400}
                 className='rounded-lg object-cover w-full h-auto'
-              />
+              /> */}
             </motion.div>
 
             <motion.p

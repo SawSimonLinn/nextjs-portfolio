@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function GetResumePage() {
@@ -83,7 +84,7 @@ export default function GetResumePage() {
         </div>
       </div>
 
-      <div className='w-full flex items-center justify-center my-20 bg-neutral-200 dark:bg-neutral-900 px-4 py-16'>
+      <div className='w-full flex items-center justify-center mt-20 bg-neutral-200 dark:bg-neutral-900 px-4 pt-16'>
         <form
           id='download'
           onSubmit={handleSubmit}
@@ -127,6 +128,14 @@ export default function GetResumePage() {
             </strong>
           </button>
         </form>
+      </div>
+      <div className='my-10 text-center'>
+        <Link
+          href='/#about'
+          className='text-blue-500 dark:text-yellow-500 hover:underline'
+        >
+          ← Back to About Me
+        </Link>
       </div>
     </div>
   );

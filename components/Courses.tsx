@@ -3,12 +3,12 @@
 import React, { useEffect, useState } from 'react';
 import { StickyScroll } from '@/components/ui/sticky-scroll-reveal';
 import Image from 'next/image';
-import Link from 'next/link';
 import Certificate1 from '@/public/tripleten.png';
 import Certificate2 from '@/public/jsmastery.png';
 import Certificate3 from '@/public/jonas.png';
 import Certificate4 from '@/public/angela-yu.png';
 import Certificate5 from '@/public/react-front-to-back.png';
+import Certificate6 from '@/public/nodejs_api_masterclass.png';
 import BrowserMockup from '@/components/BrowserMockup';
 import { motion } from 'framer-motion';
 
@@ -41,6 +41,22 @@ const content = [
           height={300}
           className='h-full w-full object-cover'
           alt='JavaScript Mastery Certificate'
+        />
+      </div>
+    ),
+  },
+  {
+    title: 'Traversy Media Node.js API Masterclass',
+    description:
+      'Completed an advanced course focused on building RESTful APIs using Node.js, Express, and MongoDB. Learned key concepts such as authentication, middleware, CRUD operations, MVC architecture, and deployment. Applied best practices in backend development while building real-world, scalable API projects with clean, modular code.',
+    content: (
+      <div className='flex h-full w-full items-center justify-center text-white'>
+        <Image
+          src={Certificate6}
+          width={300}
+          height={300}
+          className='h-full w-full object-cover'
+          alt='Traversy Media Certificate'
         />
       </div>
     ),
