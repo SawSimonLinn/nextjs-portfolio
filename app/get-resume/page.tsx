@@ -6,7 +6,7 @@ import { IoIosArrowBack } from 'react-icons/io';
 import emailjs from '@emailjs/browser';
 
 export default function GetResumePage() {
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(true);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
