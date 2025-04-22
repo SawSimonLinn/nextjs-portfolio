@@ -31,8 +31,8 @@ const About = () => {
     { text: 'Software' },
     { text: 'Developer' },
     { text: 'with' },
-    { text: 'powerful', className: 'text-blue-500 dark:text-blue-500' },
-    { text: 'intent.' },
+    { text: 'Powerful', className: 'text-blue-500 dark:text-blue-500' },
+    { text: 'Intent.' },
   ];
 
   return (
