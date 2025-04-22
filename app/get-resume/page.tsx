@@ -170,7 +170,7 @@ export default function GetResumePage() {
                 type='submit'
                 className='cursor-pointer text-sm uppercase'
               >
-                <strong className='mt-5 flex bg-blue-500 hover:bg-blue-400 dark:bg-yellow-500 dark:hover:bg-yellow-600 px-20 py-5  text-white dark:text-black rounded-xl font-bold uppercase'>
+                <strong className='mt-5 flex bg-blue-500 hover:bg-blue-400 dark:bg-yellow-500 dark:hover:bg-yellow-600 px-15 py-5  text-white dark:text-black rounded-xl font-bold uppercase'>
                   Download now
                 </strong>
               </button>
