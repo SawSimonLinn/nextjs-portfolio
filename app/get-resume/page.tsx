@@ -108,12 +108,12 @@ export default function GetResumePage() {
           <h1 className='dark:text-white text-black  text-4xl md:text-6xl font-extrabold my-6 leading-tight'>
             Download My Resume & Learn Why I’m Your Dev
           </h1>
-          <p className='my-2 text-lg md:text-xl dark:text-white text-blue-900 '>
+          <p className='my-6 text-lg md:text-xl dark:text-white text-blue-900 '>
             100+ developers and recruiters already did—now it’s your turn. Peek
             inside to see the skills, passion, and pixel-perfect magic I bring
             to every project.
           </p>
-          <div className='flex flex-row items-center justify-center lg:justify-start lg:mb-5 mb-10 mt-15 w-full'>
+          <div className='flex flex-row items-center justify-center lg:justify-start lg:mb-5 my-auto w-full'>
             <AnimatedTooltip items={people} />
           </div>
           <a
