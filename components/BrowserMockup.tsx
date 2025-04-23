@@ -18,7 +18,7 @@ const BrowserMockup = ({
           <span className='w-3 h-3 bg-green-500 rounded-full mr-4'></span>
         </div>
         <div className='center flex items-center justify-center'>
-          <span className='text-xs dark:text-white text-black truncate bg-zinc-200 dark:bg-neutral-200 px-5 sm:px-30 py-1 rounded-md'>
+          <span className='text-xs dark:text-white text-black truncate bg-zinc-200 dark:bg-neutral-700 px-5 sm:px-30 py-1 rounded-md'>
             {urlText}
           </span>
         </div>

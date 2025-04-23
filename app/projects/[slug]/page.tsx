@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function ProjectDetailPage() {
   const { slug } = useParams();
@@ -50,20 +51,20 @@ export default function ProjectDetailPage() {
               className='text-center'
             >
               <h1 className='text-4xl font-bold mb-4'>{project.title}</h1>
-              <div className='w-full lg:h-[750px] h-[550px] border-1 border-black dark:border-white  overflow-hidden shadow-xl mx-auto'>
+              {/* <div className='w-full lg:h-[750px] h-[550px] border-1 border-black dark:border-white  overflow-hidden shadow-xl mx-auto'>
                 <iframe
                   src={project.demo}
                   className='w-full h-full'
                   allowFullScreen
                 ></iframe>
-              </div>
-              {/* <Image
+              </div> */}
+              <Image
                 src={project.image}
                 alt={project.title}
                 width={800}
                 height={400}
-                className='rounded-lg object-cover w-full h-auto'
-              /> */}
+                className='border-black dark:border-white object-cover w-full h-auto'
+              />
             </motion.div>
 
             <motion.p

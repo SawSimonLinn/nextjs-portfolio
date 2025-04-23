@@ -97,7 +97,7 @@ export default function GetResumePage() {
       <Link href='/'>
         <IoIosArrowBack className='absolute lg:top-20 lg:left-30 lg:text-3xl md:top-15 md:left-10 text-2xl top-12 left-6' />
       </Link>
-      <div className='w-full flex flex-col lg:flex-row justify-center items-center bg-white dark:bg-black py-40 lg:py-50  px-6'>
+      <div className='w-full flex flex-col lg:flex-row justify-center items-center bg-white dark:bg-black py-30 lg:py-50  px-6'>
         <div className='text w-full lg:w-2/3 text-center lg:text-left'>
           <p className='text-blue-500 dark:text-yellow-500 font-extrabold text-xl uppercase mb-2'>
             Saw Simon Linn{' '}
@@ -170,7 +170,7 @@ export default function GetResumePage() {
                 type='submit'
                 className='cursor-pointer text-sm uppercase'
               >
-                <strong className='mt-5 flex bg-blue-500 hover:bg-blue-400 dark:bg-yellow-500 dark:hover:bg-yellow-600 px-15 py-5  text-white dark:text-black rounded-xl font-bold uppercase'>
+                <strong className='mt-5 flex bg-blue-500 hover:bg-blue-400 dark:bg-yellow-500 dark:hover:bg-yellow-600 px-15f py-5  text-white dark:text-black rounded-xl font-bold uppercase'>
                   Download now
                 </strong>
               </button>

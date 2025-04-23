@@ -38,7 +38,7 @@ const content = [
       <div className='flex h-full w-full items-center justify-center text-white'>
         {/* Light mode image */}
         <Image
-          src={Certificate2_dark}
+          src={Certificate2}
           width={300}
           height={300}
           className='h-full w-full object-cover dark:hidden'
@@ -46,7 +46,7 @@ const content = [
         />
         {/* Dark mode image */}
         <Image
-          src={Certificate2}
+          src={Certificate2_dark}
           width={300}
           height={300}
           className='h-full w-full object-cover hidden dark:block'
