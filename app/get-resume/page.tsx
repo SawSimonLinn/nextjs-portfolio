@@ -170,13 +170,13 @@ export default function GetResumePage() {
                 type='submit'
                 className='cursor-pointer text-sm uppercase'
               >
-                <strong className='mt-5 flex bg-blue-500 hover:bg-blue-400 dark:bg-yellow-500 dark:hover:bg-yellow-600 px-15f py-5  text-white dark:text-black rounded-xl font-bold uppercase'>
+                <strong className='mt-5 flex bg-blue-500 hover:bg-blue-400 dark:bg-yellow-500 dark:hover:bg-yellow-600 px-15 py-5  text-white dark:text-black rounded-xl font-bold uppercase'>
                   Download now
                 </strong>
               </button>
             </div>
           ) : (
-            <div className='bg-white dark:bg-black w-full flex flex-col justify-center items-center max-w-4xl mx-auto px-10 pt-8 lg:pt-20 pb-0  text-black dark:text-white text-center'>
+            <div className='bg-white dark:bg-black w-full flex flex-col justify-center items-center max-w-4xl mx-auto pt-8 lg:pt-20 pb-0  text-black dark:text-white text-center'>
               <p className='text-lg bg-green-100 text-green-600 px-6 py-3 rounded-md '>
                 Success! Now check your email to download the guide.
               </p>
