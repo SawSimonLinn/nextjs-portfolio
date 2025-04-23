@@ -93,7 +93,7 @@ export default function GetResumePage() {
   };
 
   return (
-    <div className='w-full max-w-md mx-auto px-4 relative min-h-screen flex flex-col items-center justify-center bg-neutral-200 dark:bg-neutral-900'>
+    <div className='relative min-h-screen flex flex-col items-center justify-center bg-neutral-200 dark:bg-neutral-900'>
       <Link href='/'>
         <IoIosArrowBack className='absolute lg:top-20 lg:left-30 lg:text-3xl md:top-15 md:left-10 text-2xl top-12 left-6' />
       </Link>
