@@ -136,11 +136,11 @@ const Courses = () => {
         transition={{ duration: 0.7, ease: 'easeOut' }}
         viewport={{ once: false }}
         id='certifications'
-        className='w-full px-4 pb-20 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300'
+        className='w-full px-4 pb-20 bg-white text-black dark:bg-transparent dark:text-white transition-colors duration-300'
       >
         <div className='max-w-7xl mx-auto flex flex-col items-center py-20 px-4 md:px-8 lg:px-10'>
-          <h2 className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl'>
-            Courses & Certificates
+          <h2 className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl font-bold'>
+            Courses & <span className='text-blue-500'>Certificates</span>
           </h2>
           <p className='text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-2xl text-center'>
             A collection of hands-on courses and bootcamps that shaped my

@@ -23,9 +23,13 @@ export function NavbarDemo() {
       name: 'Projects',
       link: '#projects',
     },
+    // {
+    //   name: 'Certifications',
+    //   link: '#certifications',
+    // },
     {
-      name: 'Certifications',
-      link: '#certifications',
+      name: 'Experience',
+      link: '#experience',
     },
     {
       name: 'Testimonials',

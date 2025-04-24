@@ -42,7 +42,7 @@ const Contact = () => {
         transition={{ duration: 0.7, ease: 'easeOut' }}
         viewport={{ once: false }}
         id='contact'
-        className='w-full px-4 py-20 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300'
+        className='w-full px-4 py-20 bg-white text-black dark:bg-transparent dark:text-white transition-colors duration-300'
       >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,9 @@ const Contact = () => {
           viewport={{ once: true }}
           className='max-w-4xl mx-auto text-center'
         >
-          <h2 className='text-2xl md:text-4xl font-bold mb-4'>Let’s Connect</h2>
+          <h2 className='text-2xl md:text-4xl font-bold mb-4'>
+            Let’s <span className='text-blue-500'>Connect</span>
+          </h2>
           <p className='text-neutral-700 dark:text-neutral-300 mb-10'>
             Whether you’re interested in working together or just want to say
             hi, my inbox is always open.

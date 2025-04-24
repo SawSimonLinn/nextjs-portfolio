@@ -16,16 +16,16 @@ export function GlowingEffectDemo() {
 
   return (
     <>
-      <section className='pb-30 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300'>
+      <section className='pb-30 bg-white text-black dark:bg-transparent dark:text-white transition-colors duration-300'>
         <div className='max-w-7xl mx-auto flex flex-col items-center py-20 px-4 md:px-8 lg:px-10'>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl'
+            className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl font-bold'
           >
-            What I Bring to the Table
+            What I Bring to the <span className='text-blue-500'>Table</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

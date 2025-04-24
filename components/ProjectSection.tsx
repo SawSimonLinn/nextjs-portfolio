@@ -35,9 +35,9 @@ export default function ProjectSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl'
+            className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl font-bold'
           >
-            Featured Projects
+            Featured <span className='text-blue-500'>Projects</span>
           </motion.h2>
 
           <motion.p
@@ -65,8 +65,10 @@ export default function ProjectSection() {
                     <Link href={`/projects/${project.slug}`}>
                       <Image
                         src={project.images[0]}
+                        width={800}
+                        height={300}
                         alt={project.title}
-                        className='w-full h-60 object-cover rounded-md mb-4'
+                        className='w-full h-60 object-cover rounded-md mb-4 border-1 border-blue-500'
                       />
                     </Link>
                     <div className='text-left'>
@@ -74,14 +76,14 @@ export default function ProjectSection() {
                         <h3 className='text-lg font-semibold'>
                           {project.title}
                         </h3>
-                        <span className='text-sm text-blue-400 mt-1'>
+                        <span className='text-sm text-blue-500 mt-1'>
                           {project.type}
                         </span>
                       </div>
                       <p className='text-sm text-gray-700 dark:text-gray-300 my-3'>
                         {project.description}
                       </p>
-                      <div className='flex gap-2 text-lg text-white/70 mb-4'>
+                      <div className='flex gap-2 text-lg text-white/70 mb-4 '>
                         {project.icons.map((Icon, i) => (
                           <Icon
                             key={`${project.slug}-icon-${i}`}
@@ -94,16 +96,16 @@ export default function ProjectSection() {
                       <a
                         href={project.github}
                         target='_blank'
-                        className='bg-black text-white hover:bg-black/70  dark:bg-white dark:text-black px-7 py-2 rounded text-sm flex items-center justify-center gap-2 font-medium dark:hover:bg-white/80 transition'
+                        className='bg-blue-900 text-white hover:bg-black/70  dark:bg-white dark:text-black px-7 py-2 rounded text-sm flex items-center justify-center gap-2 font-medium dark:hover:bg-white/80 transition'
                       >
                         <FaGithub /> GitHub
                       </a>
                       <a
                         href={project.demo}
                         target='_blank'
-                        className='bg-transparent border dark:border-white border-black flex items-center justify-center gap-2 px-7 py-2 rounded text-sm hover:bg-black/10 dark:hover:bg-white hover:text-black transition'
+                        className='bg-transparent border dark:border-white border-blue flex items-center justify-center gap-2 px-7 py-2 rounded text-sm hover:bg-black/10 dark:hover:bg-white hover:text-black text-blue-500 dark:text-white transition'
                       >
-                        <FaExternalLinkAlt className='text-xs' />
+                        <FaExternalLinkAlt className='text-xs  hover:text-black dark:text-white text-blue-500' />
                         Demo
                       </a>
                     </div>

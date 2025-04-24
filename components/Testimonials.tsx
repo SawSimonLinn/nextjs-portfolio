@@ -15,8 +15,8 @@ export function Testimonials() {
         className='h-full rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] pb-10 items-center justify-center relative overflow-hidden'
       >
         <div className='max-w-7xl mx-auto flex flex-col items-center py-20 px-4 md:px-8 lg:px-10'>
-          <h2 className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl'>
-            Real Words, Real Impact
+          <h2 className='text-2xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl font-bold'>
+            Real Words, Real <span className='text-blue-500'>Impact</span>
           </h2>
           <p className='text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-2xl text-center'>
             I believe in teamwork, trust, and building together. These kind

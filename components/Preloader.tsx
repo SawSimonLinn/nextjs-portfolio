@@ -18,7 +18,7 @@ export default function Preloader() {
   if (finished) return null;
 
   return (
-    <div className='fixed inset-0 z-50 flex items-center justify-center bg-white text-black dark:bg-black dark:text-white transition-colors duration-300'>
+    <div className='fixed inset-0 z-50 flex items-center justify-center bg-white text-black dark:bg-transparent dark:text-white transition-colors duration-300'>
       {!showWelcome ? (
         <h1 className='text-xl md:text-3xl font-bold typing-animation'>
           Modern Next.js Portfolio...

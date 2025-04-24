@@ -43,7 +43,7 @@ const About = () => {
         transition={{ duration: 0.7, ease: 'easeOut' }}
         viewport={{ once: false }}
         id='about'
-        className='w-full px-10 py-20 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300'
+        className='w-full px-10 py-20 bg-white text-black dark:bg-transparent dark:text-white transition-colors duration-300'
       >
         <motion.div
           initial={{ opacity: 0, y: 80 }}
@@ -78,7 +78,9 @@ const About = () => {
             }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className='text-3xl font-bold mb-6'>About Me</h2>
+            <h2 className='text-3xl font-bold mb-6'>
+              About <span className='text-blue-500'>Me</span>
+            </h2>
             <p className='text-base leading-relaxed text-gray-800 dark:text-gray-300 mb-4'>
               I’m{' '}
               <span className='text-slate-900 dark:text-slate-200 font-extrabold'>
@@ -138,7 +140,9 @@ const About = () => {
             }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className='text-3xl font-bold mb-6'>Skills I Work With</h2>
+            <h2 className='text-3xl font-bold mb-6'>
+              Skills I Work <span className='text-blue-500'>With</span>
+            </h2>
             <div className='grid grid-cols-2 gap-4'>
               <div className='space-y-4'>
                 <div className='bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 p-4 rounded-lg backdrop-blur-sm transition-colors duration-300'>
