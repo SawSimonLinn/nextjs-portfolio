@@ -7,6 +7,8 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { GrNext } from 'react-icons/gr';
+import { GrPrevious } from 'react-icons/gr';
 
 export default function ProjectDetailPage() {
   const { slug } = useParams();
@@ -62,7 +64,7 @@ export default function ProjectDetailPage() {
                 className='w-full rounded border dark:border-white object-cover'
               />
               {/* Buttons */}
-              <div className='flex justify-center gap-8 text-3xl lg:text-5xl text-black dark:text-white mt-6'>
+              <div className='flex justify-center gap-8 text-xl lg:text-2xl text-black dark:text-white mt-6'>
                 <button
                   onClick={() =>
                     setCurrentSlide(prev =>
@@ -71,7 +73,7 @@ export default function ProjectDetailPage() {
                   }
                   aria-label='Previous slide'
                 >
-                  ‹
+                  <GrPrevious />
                 </button>
                 <button
                   onClick={() =>
@@ -79,7 +81,7 @@ export default function ProjectDetailPage() {
                   }
                   aria-label='Next slide'
                 >
-                  ›
+                  <GrNext />
                 </button>
               </div>
               {/* </div> */}
