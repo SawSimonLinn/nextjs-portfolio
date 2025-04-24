@@ -26,21 +26,57 @@ import {
 } from 'react-icons/si';
 
 import project1 from '@/public/project_1.png';
+import project1a from '@/public/project_1a.png';
+import project1b from '@/public/project_1b.png';
+import project1c from '@/public/project_1c.png';
+
 import project2 from '@/public/project_2.png';
+import project2a from '@/public/project_2a.png';
+import project2b from '@/public/project_2b.png';
+import project2c from '@/public/project_2c.png';
+
 import project3 from '@/public/project_3.png';
+import project3a from '@/public/project_3a.png';
+import project3b from '@/public/project_3b.png';
+import project3c from '@/public/project_3c.png';
+
 import project4 from '@/public/project_4.png';
+import project4a from '@/public/project_4a.png';
+import project4b from '@/public/project_4b.png';
+import project4c from '@/public/project_4c.png';
+
 import project5 from '@/public/project_5.png';
+import project5a from '@/public/project_5a.png';
+import project5b from '@/public/project_5b.png';
+import project5c from '@/public/project_5c.png';
+import project5d from '@/public/project_5d.png';
+
 import project6 from '@/public/project_6.png';
+import project6a from '@/public/project_6a.png';
+import project6b from '@/public/project_6b.png';
+import project6c from '@/public/project_6c.png';
+
 import project7 from '@/public/project_7.png';
+import project7a from '@/public/project_7a.png';
+import project7b from '@/public/project_7b.png';
+import project7c from '@/public/project_7c.png';
+
 import project8 from '@/public/project_8.png';
+import project8a from '@/public/project_8a.png';
+import project8b from '@/public/project_8b.png';
+import project8c from '@/public/project_8c.png';
+
 import project9 from '@/public/project_9.png';
+import project9a from '@/public/project_9a.png';
+import project9b from '@/public/project_9b.png';
+import project9c from '@/public/project_9c.png';
 
 export const projects = [
   {
     id: 1,
     slug: 'news-explorer',
     title: 'News Explorer',
-    image: project1,
+    images: [project1, project1a, project1b, project1c],
     type: 'Frontend',
     description:
       'A React web app for searching the latest news and saving articles, featuring real-time updates via API integration.',
@@ -76,7 +112,7 @@ export const projects = [
     id: 2,
     slug: 'wtwr',
     title: 'WTWR (What to Wear)',
-    image: project2,
+    images: [project2, project2a, project2b, project2c],
     type: 'Fullstack',
     description:
       'A weather-based clothing recommendation web app with authentication and item management functionality.',
@@ -114,7 +150,7 @@ export const projects = [
     id: 3,
     slug: 'yc-directory',
     title: 'YC Directory',
-    image: project3,
+    images: [project3, project3a, project3b, project3c],
     type: 'Frontend',
     description:
       'A directory-style start-up listing web app built with Next.js, TypeScript, Sanity CMS and styled in Tailwind CSS.',
@@ -151,7 +187,7 @@ export const projects = [
     id: 4,
     slug: 'award-winning-website',
     title: 'Award Winning Website',
-    image: project4,
+    images: [project4, project4a, project4b, project4c],
     type: 'Frontend',
     description:
       'A modern, responsive website built with React and Vite—clean design, fast performance, and smooth dev experience.',
@@ -186,7 +222,7 @@ export const projects = [
     id: 5,
     slug: 'modern-nextjs-portfolio',
     title: 'Modern Next.js Portfolio',
-    image: project5,
+    images: [project5, project5a, project5b, project5c, project5d],
     type: 'Frontend',
     description:
       'A clean and responsive developer portfolio built with Next.js and Tailwind CSS, showcasing projects, skills, and testimonials.',
@@ -224,7 +260,7 @@ export const projects = [
     type: 'Fullstack',
     description:
       'A Google Drive clone built with React, TypeScript, Tailwind CSS, and Appwrite, allowing users to upload and manage files securely.',
-    image: project6,
+    images: [project6, project6a, project6b, project6c],
     bulletPoints: [
       'Built a Google Drive clone using React and TypeScript.',
       'Integrated Appwrite for file storage, authentication, and database.',
@@ -279,7 +315,7 @@ export const projects = [
       'Responsive design principles',
       'Component-based architecture',
     ],
-    image: project7,
+    images: [project7, project7a, project7b, project7c],
     icons: [
       RiJavascriptFill,
       FaHtml5,
@@ -317,7 +353,7 @@ export const projects = [
       'Responsive design techniques',
       'Modular code organization',
     ],
-    image: project8,
+    images: [project8, project8a, project8b, project8c],
     icons: [RiJavascriptFill, FaHtml5, FaCss3, TbApi, CgFigma, SiVercel],
     demo: 'https://sawsimonlinn.github.io/se_project_aroundtheus/',
     github: 'https://github.com/SawSimonLinn/se_project_aroundtheus',
@@ -330,7 +366,7 @@ export const projects = [
     type: 'Frontend',
     description:
       'JSM Movie App is a modern React-based movie explorer that uses the TMDB API for real-time data, and powered by Appwrite.',
-    image: project9,
+    images: [project9, project9a, project9b, project9c],
     bulletPoints: [
       'Real-time movie data from TMDB API',
       'User authentication with Appwrite',

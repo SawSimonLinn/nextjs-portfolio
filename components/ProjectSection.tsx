@@ -64,7 +64,7 @@ export default function ProjectSection() {
                   <div className='bg-white/5 dark:bg-white/10 p-4 rounded-lg shadow-sm flex flex-col h-auto justify-between'>
                     <Link href={`/projects/${project.slug}`}>
                       <Image
-                        src={project.image}
+                        src={project.images[0]}
                         alt={project.title}
                         className='w-full h-60 object-cover rounded-md mb-4'
                       />

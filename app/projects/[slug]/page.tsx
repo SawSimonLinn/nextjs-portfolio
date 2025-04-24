@@ -12,6 +12,7 @@ export default function ProjectDetailPage() {
   const { slug } = useParams();
   const project = projects.find(p => p.slug === slug);
   const [isDark, setIsDark] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', isDark);
@@ -51,20 +52,37 @@ export default function ProjectDetailPage() {
               className='text-center'
             >
               <h1 className='text-4xl font-bold mb-4'>{project.title}</h1>
-              {/* <div className='w-full lg:h-[750px] h-[550px] border-1 border-black dark:border-white  overflow-hidden shadow-xl mx-auto'>
-                <iframe
-                  src={project.demo}
-                  className='w-full h-full'
-                  allowFullScreen
-                ></iframe>
-              </div> */}
+
+              {/* <div className='relative w-full max-w-3xl mx-auto'> */}
               <Image
-                src={project.image}
-                alt={project.title}
+                src={project.images[currentSlide]}
+                alt={`Slide ${currentSlide + 1}`}
                 width={800}
                 height={400}
-                className='border-black dark:border-white object-cover w-full h-auto'
+                className='w-full rounded border dark:border-white object-cover'
               />
+              {/* Buttons */}
+              <div className='flex justify-center gap-8 text-3xl lg:text-5xl text-black dark:text-white mt-6'>
+                <button
+                  onClick={() =>
+                    setCurrentSlide(prev =>
+                      prev === 0 ? project.images.length - 1 : prev - 1
+                    )
+                  }
+                  aria-label='Previous slide'
+                >
+                  ‹
+                </button>
+                <button
+                  onClick={() =>
+                    setCurrentSlide(prev => (prev + 1) % project.images.length)
+                  }
+                  aria-label='Next slide'
+                >
+                  ›
+                </button>
+              </div>
+              {/* </div> */}
             </motion.div>
 
             <motion.p
