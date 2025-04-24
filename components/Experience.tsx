@@ -165,7 +165,7 @@ export function Experience() {
             ) : null}
           </AnimatePresence>
           <ul className='max-w-4xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4'>
-            {experienceCards.map((card, index) => (
+            {experienceCards.map(card => (
               <motion.div
                 layoutId={`card-${card.title}-${id}`}
                 key={card.title}
@@ -241,7 +241,7 @@ export const CloseIcon = () => {
 
 const experienceCards = [
   {
-    title: 'WTWR (Weather-to-Wear) – Bootcamp Project',
+    title: 'WTWR (What-to-Wear) – Bootcamp Project',
     description: 'Created a clothing recommendation app based on weather data.',
     src: project2,
     ctaText: 'Check It Out',
