@@ -330,7 +330,7 @@ export const projects = [
     ],
     demo: 'https://ecochallengeapp.com/',
     github: 'https://github.com/SawSimonLinn/eco-challenge',
-    video: '/404',
+    video: 'https://youtu.be/g3kQ_vzmjqE',
   },
   {
     id: 8,
