@@ -71,6 +71,12 @@ import project9a from '@/public/project_9a.png';
 import project9b from '@/public/project_9b.png';
 import project9c from '@/public/project_9c.png';
 
+import project10 from '@/public/project_10.png';
+import project10a from '@/public/project_10a.png';
+import project10b from '@/public/project_10b.png';
+import project10c from '@/public/project_10c.png';
+import project10d from '@/public/project_10d.png';
+
 export const projects = [
   {
     id: 1,
@@ -148,41 +154,76 @@ export const projects = [
   },
   {
     id: 3,
-    slug: 'yc-directory',
-    title: 'YC Directory',
-    images: [project3, project3a, project3b, project3c],
-    type: 'Frontend',
+    slug: 'hopeschooldashboard',
+    title: 'Hope School Dashboard',
+    images: [project10, project10a, project10b, project10c, project10d],
+    type: 'Fullstack',
     description:
-      'A directory-style start-up listing web app built with Next.js, TypeScript, Sanity CMS and styled in Tailwind CSS.',
+      'A fullstack school management dashboard built with Next.js, TypeScript, and Tailwind CSS, featuring user authentication and data management.',
     bulletPoints: [
-      'Data-driven directory using Sanity backend',
-      'Next.js dynamic routing and SSR',
-      'Search and filter UI for company listings',
-      'Responsive grid layout with animations',
-      'Deployed with Vercel + analytics tracking',
+      'User authentication with JWT and role-based access',
+      'Dynamic data management for students and teachers',
+      'Responsive design with Tailwind CSS',
+      'Real-time updates with WebSocket integration',
+      'Modular architecture for maintainability',
     ],
-    skills: ['Next.js', 'Sanity', 'JavaScript', 'Tailwind', 'Figma', 'Vercel'],
+    skills: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 'MongoDB'],
     techniques: [
-      'CMS integration and data fetching',
-      'Filtering and client-side interactivity',
-      'Deployment and version control',
-      'Motion animations for user engagement',
+      'Server-side rendering and API routes in Next.js',
+      'Role-based access control and secure sessions',
+      'Responsive UI components with Tailwind CSS',
+      'WebSocket for real-time data updates',
     ],
     icons: [
       FaReact,
       RiNextjsFill,
-      RiJavascriptFill,
+      BiLogoTypescript,
       RiTailwindCssFill,
-      TbApi,
-      CgFigma,
+      FaHtml5,
+      FaCss3,
       SiVercel,
-      SiSanity,
-      SiSentry,
     ],
-    github: 'https://github.com/SawSimonLinn/yc_directory',
-    demo: 'https://yc-directory.sawsimonlinn.com',
+    demo: 'https://hopeschoolhub-myanmar.vercel.app/login',
+    github: 'https://github.com/SawSimonLinn/hopeschoolhub',
     video: '/404',
   },
+  // {
+  //   id: 3,
+  //   slug: 'yc-directory',
+  //   title: 'YC Directory',
+  //   images: [project3, project3a, project3b, project3c],
+  //   type: 'Frontend',
+  //   description:
+  //     'A directory-style start-up listing web app built with Next.js, TypeScript, Sanity CMS and styled in Tailwind CSS.',
+  //   bulletPoints: [
+  //     'Data-driven directory using Sanity backend',
+  //     'Next.js dynamic routing and SSR',
+  //     'Search and filter UI for company listings',
+  //     'Responsive grid layout with animations',
+  //     'Deployed with Vercel + analytics tracking',
+  //   ],
+  //   skills: ['Next.js', 'Sanity', 'JavaScript', 'Tailwind', 'Figma', 'Vercel'],
+  //   techniques: [
+  //     'CMS integration and data fetching',
+  //     'Filtering and client-side interactivity',
+  //     'Deployment and version control',
+  //     'Motion animations for user engagement',
+  //   ],
+  //   icons: [
+  //     FaReact,
+  //     RiNextjsFill,
+  //     RiJavascriptFill,
+  //     RiTailwindCssFill,
+  //     TbApi,
+  //     CgFigma,
+  //     SiVercel,
+  //     SiSanity,
+  //     SiSentry,
+  //   ],
+  //   github: 'https://github.com/SawSimonLinn/yc_directory',
+  //   demo: 'https://yc-directory.sawsimonlinn.com',
+  //   video: '/404',
+  // },
   {
     id: 7,
     slug: 'eco-challenge-web-app',
@@ -219,7 +260,7 @@ export const projects = [
     ],
     demo: 'https://ecochallengeapp.com/',
     github: 'https://github.com/SawSimonLinn/eco-challenge',
-    video: 'https://youtu.be/g3kQ_vzmjqE',
+    video: 'https://www.youtube.com/embed/g3kQ_vzmjqE?si=Pf1cQ-dUUXtR8apV',
   },
   {
     id: 5,
