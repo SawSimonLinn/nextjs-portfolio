@@ -16,7 +16,7 @@ export default function ClientLayout({
     if (pathname === '/') {
       const timeout = setTimeout(() => {
         setIsLoading(false);
-      }, 4600); // Same as your Preloader duration
+      }, 1000);
 
       return () => clearTimeout(timeout);
     } else {
