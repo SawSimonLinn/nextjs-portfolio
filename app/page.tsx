@@ -17,7 +17,7 @@ export default function Home() {
       <About />
       <ProjectSection />
       <Courses />
-      {/* <Experience /> */}
+      <Experience />
       <GlowingEffectDemo />
       <Testimonials />
       <Contact />
