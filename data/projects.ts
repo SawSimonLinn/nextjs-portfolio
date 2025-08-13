@@ -25,6 +25,12 @@ import {
   SiSentry,
 } from "react-icons/si";
 
+import project0 from "@/public/project_0.png";
+import project0a from "@/public/project_0a.png";
+import project0b from "@/public/project_0b.png";
+import project0c from "@/public/project_0c.png";
+import project0d from "@/public/project_0d.png";
+
 import project1 from "@/public/project_1.png";
 import project1a from "@/public/project_1a.png";
 import project1b from "@/public/project_1b.png";
@@ -72,6 +78,49 @@ import project9b from "@/public/project_9b.png";
 import project9c from "@/public/project_9c.png";
 
 export const projects = [
+  {
+    id: 0,
+    slug: "blue-bird-haus",
+    title: "Blue Bird Haus",
+    images: [project0, project0a, project0b, project0c, project0d],
+    type: "Frontend",
+    description:
+      "A modern sushi restaurant website with an easy-to-use online menu, vibrant photo gallery, and admin panel for managing menu items.",
+    bulletPoints: [
+      "Implemented a responsive design using Next.js and Tailwind CSS",
+      "Integrated a smart reservation system with seat limits, cutoff times, and waitlist functionality to optimize bookings",
+      "Designed a clean, appetizing UI/UX to highlight menu items, gallery photos, and promotions",
+      "Added an admin dashboard for managing menu categories, items, and gallery uploads",
+      "Optimized performance, accessibility, and SEO to attract more customers and improve search rankings",
+    ],
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Appwrite",
+      "Resent",
+      "CI/CD",
+    ],
+    techniques: [
+      "Responsive design principles",
+      "CMS integration and management",
+      "Image optimization techniques",
+      "Interactive map creation",
+    ],
+    icons: [
+      RiNextjsFill,
+      SiAppwrite,
+      BiLogoTypescript,
+      RiTailwindCssFill,
+      CgFigma,
+      FaCss3,
+      FaGitSquare,
+      FaGithub,
+    ],
+    github: "https://github.com/SawSimonLinn/se_project_bluebirdhaus",
+    demo: "https://bluebirdhaus.jumpingcrab.com/",
+    video: "/404",
+  },
   {
     id: 1,
     slug: "news-explorer",
