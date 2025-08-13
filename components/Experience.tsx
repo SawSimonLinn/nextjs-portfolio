@@ -246,7 +246,7 @@ const experienceCards = [
       "Developed various web applications for clients using modern technologies.",
     src: project2,
     ctaText: "Check It Out",
-    ctaLink: "https://wtwrapp.jumpingcrab.com/",
+    ctaLink: "https://github.com/SawSimonLinn/bluebirdhaussushi",
     content: () => (
       <>
         <p className="mb-2">
@@ -291,7 +291,7 @@ const experienceCards = [
       "Developed a comprehensive web platform for Hope Private Academy using Next.js and Tailwind CSS.",
     src: project5,
     ctaText: "HOPE",
-    ctaLink: "https://www.sawsimonlinn.com/",
+    ctaLink: "https://github.com/SawSimonLinn/hopeschoolhub",
     content: () => (
       <>
         <p className="mb-2">
@@ -335,7 +335,7 @@ const experienceCards = [
       "Developed a web app to promote eco-friendly habits using MERN stack.",
     src: project7,
     ctaText: "Explore App",
-    ctaLink: "https://ecochallengeapp.com/",
+    ctaLink: "https://github.com/SawSimonLinn/eco-challenge",
     content: () => (
       <>
         <p className="mb-2">
@@ -371,7 +371,7 @@ const experienceCards = [
       "Designed engaging visuals and user interfaces for various digital platforms.",
     src: project6,
     ctaText: "View Project",
-    ctaLink: "https://drivio.sawsimonlinn.com/",
+    ctaLink: "https://www.iyfusa.org/koreancamp",
     content: () => (
       <>
         <p className="mb-2">
