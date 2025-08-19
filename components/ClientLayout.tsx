@@ -1,8 +1,13 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation';
-import Preloader from './Preloader';
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import dynamic from "next/dynamic";
+
+const Preloader = dynamic(() => import("./Preloader"), {
+  ssr: false,
+  loading: () => <div />,
+});
 
 export default function ClientLayout({
   children,
@@ -10,10 +15,10 @@ export default function ClientLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const [isLoading, setIsLoading] = useState(pathname === '/');
+  const [isLoading, setIsLoading] = useState(pathname === "/");
 
   useEffect(() => {
-    if (pathname === '/') {
+    if (pathname === "/") {
       const timeout = setTimeout(() => {
         setIsLoading(false);
       }, 4600); // Same as your Preloader duration
@@ -24,7 +29,7 @@ export default function ClientLayout({
     }
   }, [pathname]);
 
-  if (isLoading && pathname === '/') {
+  if (isLoading && pathname === "/") {
     return <Preloader />;
   }
 
