@@ -118,7 +118,7 @@ export const projects = [
       FaGithub,
     ],
     github: "https://github.com/SawSimonLinn/se_project_bluebirdhaus",
-    demo: "https://bluebirdhaus.jumpingcrab.com/",
+    demo: "https://bluebirdhaus.online/",
     video: "/404",
   },
   {
